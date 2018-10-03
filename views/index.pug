@@ -1,0 +1,464 @@
+
+doctype html
+head
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	// The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+	title NetworkingDay
+	// Google font
+	link(href='https://fonts.googleapis.com/css?family=Poppins:400,700,900', rel='stylesheet')
+	// Bootstrap
+	link(type='text/css', rel='stylesheet', href='css/bootstrap.min.css')
+	// Owl Carousel
+	link(type='text/css', rel='stylesheet', href='css/owl.carousel.css')
+	link(type='text/css', rel='stylesheet', href='css/owl.theme.default.css')
+	// Font Awesome Icon
+	link(rel='stylesheet', href='/css/font-awesome.min.css')
+	// Custom stlylesheet
+	link(type='text/css', rel='stylesheet', href='css/style.css')
+	// HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+	// WARNING: Respond.js doesn't work if you view the page via file://
+	//if lt IE 9
+		script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+// Header
+
+header#header.transparent-navbar
+	// container
+	.container
+		// navbar header
+		.navbar-header
+			// Logo
+			.navbar-brand
+				a.logo(href='#')
+					img.logo-img(src='./img/netLogo.jpg', alt='logo')
+					img.logo-alt-img(src='./img/netLogo_alt.png', alt='logo')
+			// /Logo
+			// Mobile toggle
+			button.navbar-toggle
+				i.fa.fa-bars
+			// /Mobile toggle
+		// /navbar header
+		// Navigation
+		nav#nav
+			ul.main-nav.nav.navbar-nav.navbar-right
+				li
+					a(href='#home') Inicial
+				li
+					a(href='#about') Sobre
+				li
+					a(href='#schedule') Agenda
+				li
+					a(href='#speakers') Palestrantes
+				li
+					a(href='#sponsors') Patrocinadores
+				li
+					a(href='#contact') Contato
+				li
+					a(href='blog.html') Blog
+		// /Navigation
+	// /container
+// /Header
+// Home
+#home
+	// background image
+	.section-bg(style='background-image:url(./img/ntDayGifEdit.jpg)', data-stellar-background-ratio='0.5')
+	// /background image
+	// home wrapper
+	.home-wrapper
+		// container
+		.container
+			// row
+			.row
+				// home content
+				.col-md-8.col-md-offset-2
+					.home-content
+						//- img(src="img/", alt="")
+						//- h4.lead
+						//- //- a.main-btn(href='#') Comprar ingresso
+				// /home content
+			// /row
+		// /container
+	// /home wrapper
+// /Home
+// About
+#about.section
+	// container
+	.container
+		// row
+		.row
+			// section title
+			.section-title
+				h3.title
+					span Sobre
+					span(style='color: #1877b6;') NetworkingDay
+			// /section title
+			.col-md-8.col-md-offset-2.text-center
+				// about content
+				.about-content
+					p
+				// /about content
+				// Numbers
+				#numbers
+					// row
+					.row
+						// number
+						.col-md-3.col-sm-3.col-xs-6
+							.number
+								h3
+									span.counter(data-from='0', data-to='900', data-speed='1500') 0
+								p Horas
+						// /number
+						// number
+						.col-md-3.col-sm-3.col-xs-6
+							.number
+								h3
+									span.counter(data-from='0', data-to='750', data-speed='1500') 0
+								p Locais
+						// /number
+						// number
+						.col-md-3.col-sm-3.col-xs-6
+							.number
+								h3
+									span.counter(data-from='0', data-to='50', data-speed='1500') 0
+								p Pais
+						// /number
+						// number
+						.col-md-3.col-sm-3.col-xs-6
+							.number
+								h3
+									span.counter(data-from='0', data-to='20', data-speed='1500') 0
+								p Palestrantes
+					
+#galery
+	.container
+		.row
+			#galery-owl.owl-carousel.owl-theme
+				.galery-item
+					img(src='./img/galery01.jpg', alt='')
+				.galery-item
+					img(src='./img/galery02.jpg', alt='')
+				.galery-item
+					img(src='./img/galery03.jpg', alt='')
+
+#schedule.section
+	// container
+	.container
+		// row
+		.row
+			// section title
+			.section-title
+				h3.title
+					span(style='color: #1877b6;') Agenda 
+					span Networking Day
+			// /section title
+			.col-md-8.col-md-offset-2
+				.events-wrapper
+					// event
+					.event
+						.event-day
+							div
+								span.day 15
+								span.year Dez, 2018
+						.event-content
+							p.event-time
+								i.fa.fa-clock-o
+							h3.event-title Evento
+							p
+							p
+								a(href='#') John Doe
+					// /event
+					// event
+					.event
+						.event-hNossos
+						.event-content
+							p.event-time
+								i.fa.fa-clock-o
+							h3.event-title Atividades (Palestras)
+							p
+							p
+								a(href='#') Palestrantes
+					// /event
+					// event
+					//- .event
+					//- 	.event-hNossos
+					//- 	.event-content
+					//- 		p.event-time
+					//- 			i.fa.fa-clock-o
+					//- 		h3.event-title At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+					//- 		p
+					//- 		p
+					//- 			a(href='#') John Doe
+					// /event
+					// event
+					// /event
+				.download-btn
+					a.main-btn(href='#') Download da Agenda
+		// /row
+	// /container
+// /Event Schedule
+// Speakers
+#speakers.section
+	// container
+	.container
+		// row
+		.row
+			// section title
+			.section-title
+				h3.title
+					span Nossos
+					span(style='color: #1877b6;') Palestrantes
+			// section title
+			// speaker
+			.col-md-4.col-sm-6
+				.speaker(data-toggle='modal', data-target='#speaker-modal-1')
+					.speaker-img
+						img(src='./img/speaker01.jpg', alt='')
+					.speaker-body
+						.speaker-social
+							a(href='#')
+								i.fa.fa-facebook
+							a(href='#')
+								i.fa.fa-twitter
+							a(href='#')
+								i.fa.fa-instagram
+							a(href='#')
+								i.fa.fa.fa-linkedin
+						.speaker-content
+							h2 John Doe
+							span Manager, CEO
+			// /speaker
+			// speaker
+			.col-md-4.col-sm-6
+				.speaker(data-toggle='modal', data-target='#speaker-modal-1')
+					.speaker-img
+						img(src='./img/speaker02.jpg', alt='')
+					.speaker-body
+						.speaker-social
+							a(href='#')
+								i.fa.fa-facebook
+							a(href='#')
+								i.fa.fa-twitter
+							a(href='#')
+								i.fa.fa-instagram
+							a(href='#')
+								i.fa.fa.fa-linkedin
+						.speaker-content
+							h2 John Doe
+							span Manager, CEO
+			// /speaker
+			// speaker
+			.col-md-4.col-sm-6
+				.speaker(data-toggle='modal', data-target='#speaker-modal-1')
+					.speaker-img
+						img(src='./img/speaker03.jpg', alt='')
+					.speaker-body
+						.speaker-social
+							a(href='#')
+								i.fa.fa-facebook
+							a(href='#')
+								i.fa.fa-twitter
+							a(href='#')
+								i.fa.fa-instagram
+							a(href='#')
+								i.fa.fa.fa-linkedin
+						.speaker-content
+							h2 John Doe
+							span Manager, CEO
+			// /speaker
+			// speaker modal
+			#speaker-modal-1.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/speaker-info.jpg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name John Doe
+										span.speaker-job - Manager, CEO
+										p
+										.speaker-website
+											h4 Website
+											a(href='#') www.johndoe.com
+										.speaker-social
+											h4 Social Profile
+											a(href='#')
+												i.fa.fa-facebook
+											a(href='#')
+												i.fa.fa-twitter
+											a(href='#')
+												i.fa.fa-instagram
+											a(href='#')
+												i.fa.fa.fa-linkedin
+										.speaker-events
+											h4 Sessions
+											.speaker-event
+												span
+													strong Day 1 -
+												p His id altera fabellas facilisis. Has eros assueverit cu
+											.speaker-event
+												span
+													strong Day 2 -
+												p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+			// /speaker modal
+		// /row
+	// /container
+// /Speakers
+// Sponsors
+#sponsors.section
+	// container
+	.container
+		// row
+		.row
+			// section title
+			.section-title
+				h3.title
+					span Nossos
+					span(style='color: #1877b6;') Patrocinadores
+			// /section title
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+			// sponsor
+			.col-md-3.col-sm-4.col-xs-6
+				a.sponsor(href='#')
+					img(src='./img/sponsor.png', alt='')
+			// /sponsor
+		// /row
+	// /container
+// /Sponsors
+// CTA
+#cta.section
+	// background image
+	.section-bg(style='background-image:url(./img/background03.jpg)', data-stellar-background-ratio='0.5')
+	// /background image
+	// container
+	.container
+		// container
+		.row
+			// cta content
+			.col-md-8.col-md-offset-2
+				.cta-content.text-center
+					h2 Comprar ingresso
+					p.lead
+					a.main-btn(href='#') Comprar Ingresso
+		
+#contact.section
+	// container
+	.container
+		// row
+		.row
+			// section title
+			.section-title
+				h3.title
+					span Contato
+					span(style='color: #1877b6;') Info
+			// /section title
+			// contact
+			.col-sm-4
+				.contact
+					h3 Endereço
+					p 2635 Simons Hollow Road, NEW YORK
+			// /contact
+			// contact
+			.col-sm-4
+				.contact
+					h3 Telefone
+					p 570-751-2415
+			// /contact
+			// contact
+			.col-sm-4
+				.contact
+					h3 Email
+					a(href='#') example@support.com
+			// /contact
+		// /row
+	// /container
+	// Map
+	#map
+		iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.493190869099!2d-45.96983744956965!3d-23.29785815772435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb69c549b165%3A0x6e627d89e794db08!2sEtec+C%C3%B4nego+Jos%C3%A9+Bento!5e0!3m2!1spt-BR!2sbr!4v1538533329358', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
+	// /Map
+// /Contact
+// Footer
+footer#footer
+	// container
+	.container
+		// row
+		.row
+			// footer logo
+			.col-md-4.col-md-push-4
+				.footer-brand
+					a.logo(href='index.html')
+						img.logo-img(src='./img/logo.png', alt='logo')
+			// /footer logo
+			// contact social
+			.col-md-4.col-md-push-4
+				.contact-social
+					a(href='#')
+						i.fa.fa-facebook
+					a(href='#')
+						i.fa.fa-twitter
+					a(href='#')
+						i.fa.fa-google-plus
+					a(href='#')
+						i.fa.fa-instagram
+					a(href='#')
+						i.fa.fa-pinterest
+					a(href='#')
+						i.fa.fa.fa-linkedin
+			// /contact social
+			// copyright
+			.col-md-4.col-md-pull-8
+				span.copyright
+					// Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+					script.
+						document.write(new Date().getFullYear());
+					i.fa.fa-heart-o(aria-hidden='true')
+					a(href='https://colorlib.com', target='_blank') Colorlib
+					// Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+		
+// jQuery Plugins
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.waypoints.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/jquery.stellar.min.js')
+script(src='js/jquery.countTo.js')
+script(src='js/main.js')

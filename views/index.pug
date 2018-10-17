@@ -183,7 +183,7 @@ header#header.transparent-navbar
 					span Nossos
 					span(style='color: #1877b6;') Palestrantes
 		
-			.col-md-4.col-sm-6
+			.col-md-4.col-sm-6#paulokretcheubox
 				.speaker(data-toggle='modal', data-target='#paulokretcheu')
 					.speaker-img
 						img.palestrantebox(src='./img/Kretcheu.jpeg', alt='')
@@ -195,7 +195,7 @@ header#header.transparent-navbar
 							h2 Paulo Kretcheu
 							span Administrador de redes
 		
-			.col-md-4.col-sm-6
+			.col-md-4.col-sm-6#diogobranquinhobox
 				.speaker(data-toggle='modal', data-target='#diogobranquinho')
 					.speaker-img
 						img.palestrantebox(src='./img/diogobranquinho.jpeg', alt='')
@@ -207,7 +207,7 @@ header#header.transparent-navbar
 							h2 Diogo Branquinho
 							span System Engineer at TecSUS
 	
-			.col-md-4.col-sm-6
+			.col-md-4.col-sm-6#djangogirlsbox
 				.speaker(data-toggle='modal', data-target='#djangogirls')
 					.speaker-img
 						img.palestrantebox(src='./img/djangogirls.png', alt='')
@@ -218,7 +218,7 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Django Girls
 							span Grupo
-			.col-md-4.col-sm-6
+			.col-md-4.col-sm-6#pyladiesbox
 				.speaker(data-toggle='modal', data-target='#pyladies')
 					.speaker-img
 						img.palestrantebox(src='./img/pyladies.png', alt='')
@@ -229,19 +229,48 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 PyLadies
 							span Grupo
-			.col-md-4.col-sm-6
-				.speaker(data-toggle='modal', data-target='#dadosabertos')
+			.col-md-4.col-sm-6#pauloluanbox
+				.speaker(data-toggle='modal', data-target='#pauloluan')
 					.speaker-img
-						img.palestrantebox(src='./img/dadosabertos.jpeg', alt='')
+						img.palestrantebox(src='./img/pauloluan.png', alt='')
 					.speaker-body
 						.speaker-social
-							a(href='https://www.facebook.com/sjcdigital/')
-								i.fa.fa-facebook
-							a(href='https://github.com/sjcdigital?language=css')
+							a(href='https://www.github.com/pauloluan/')
 								i.fa.fa.fa-github
+							a(href='https://www.linkedin.com/in/pauloluan/')
+								i.fa.fa.fa-linkedin
 						.speaker-content
-							h2 Dados Abertos
-							span Grupo
+							h2 Paulo Luan
+							span Dados Abertos
+			.col-md-4.col-sm-6#pedrohenriquebox
+				.speaker(data-toggle='modal', data-target='#pedrohenrique')
+					.speaker-img
+						img.palestrantebox(src='./img/pedrohenrique.jpg', alt='')
+					.speaker-body
+						.speaker-social
+							//- a(href='https://www.facebook.com/sjcdigital/')
+							//- 	i.fa.fa-facebook
+							//- a(href='https://github.com/sjcdigital?language=css')
+							//- 	i.fa.fa.fa-github
+						.speaker-content
+							h2 Pedro Henrique
+							span Software Maintenence Engineer
+			
+			.col-md-4.col-sm-6.hidden#williamantoniobox
+				.speaker(data-toggle='modal', data-target='#williamantonio')
+					.speaker-img
+						img.palestrantebox(src='./img/williamantonio.png', alt='')
+					.speaker-body
+						.speaker-social
+							a(href='http://fxapps.blogspot.com/')
+								i.fa.fa.fa-globe
+							a(href='https://williamantonio.wordpress.com/')
+								i.fa.fa.fa-wordpress
+						.speaker-content
+							h2 William Antônio
+							span Java Software Engineer
+			.col-md-12.col-md-offset-5
+				btn.btn.btn-primary.btn-lg#vermais Ver Mais
 			//- .col-md-4.col-sm-6
 			//- 	.speaker(data-toggle='modal', data-target='#speaker-modal-1')
 			//- 		.speaker-img
@@ -413,6 +442,93 @@ header#header.transparent-navbar
 												span
 													strong 15/12 - 09:00 -
 												p William Siqueira: Dados Abertos : Desenvolvimento
+			#williamantonio.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/williamantonio.png', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name William Antonio
+										span.speaker-job - Java Software Engineer
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify Formado na FATEC de São José dos Campos, fez curso de extensão em Tecnologia na UFABC e tem 10 anos de experiência na área de TI. Trabalhou com ABAP, Business Objects, Linguagem C e foiEngenheiro de Manutenção na Red Hat atuando com ferramentas JBoss, principalmente com APIs REST, jBPM (BPM Suite) e Drools (BRMS) e atualmente é Especialista de Software no time Business Automation Engineering. É membro do grupo SJC Digital onde trabalha com aplicações para explorar dados abertos, incluindo o projeto Repasse. Apaixonado por open source e Java, começou a trabalhar com JavaFX desde a versão 1.0, fundou o primeiro grupo brasileiro e mantém diversos blogs em portugês sobre Java. Apresentou em diversos eventos como Java One, TDC, FISL e é um dos organizadores do grupo de usuários do Vale do Paraíba, o JUG Vale
+										.speaker-social
+											h4 Midias Sociais
+											a(href='http://fxapps.blogspot.com/')
+												i.fa.fa.fa-globe
+											a(href='https://williamantonio.wordpress.com/')
+												i.fa.fa.fa-wordpress
+										//- .speaker-events
+										//- 	h4 Sessões
+										//- 	.speaker-event
+										//- 		span
+										//- 			strong 15/12 - 09:00 -
+										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
+			#pauloluan.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/pauloluan.png', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Paulo Luan
+										span.speaker-job - Desenvolvedor
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify Mais de 8 anos de xp em desenvolvimento, Trabalhou nas maiores consultorias de software do país em projetos de grande relevância como o backend do internet banking de um dos maiores bancos da américa latina e um ecommerce global de vendas da Motorola. Apaixonado por software livre, Hacker-ativista e aspirante a empreendedor.
+										.speaker-social
+											h4 Midias Sociais
+											a(href='https://www.github.com/pauloluan/')
+												i.fa.fa.fa-github
+											a(href='https://www.linkedin.com/in/pauloluan/')
+												i.fa.fa.fa-linkedin
+										//- .speaker-events
+										//- 	h4 Sessões
+										//- 	.speaker-event
+										//- 		span
+										//- 			strong 15/12 - 09:00 -
+										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
+			#pedrohenrique.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/pedrohenrique.jpg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Pedro Henrique
+										span.speaker-job - Software Maintenence Engineer
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify Pedro Henrique de Oliveira Silva (Pedro Hos) É graduado em Banco de Dados pela FATEC-SJC, Software Maintenence Engineer na Red Hat, organizador do JUG Vale e idealizador do SJC Digital. Acredita que dados abertos e opensource pode mudar o mundo.
+										.speaker-social
+											//- h4 Midias Sociais
+											//- a(href='https://www.github.com/pauloluan/')
+											//- 	i.fa.fa.fa-github
+											//- a(href='https://www.linkedin.com/in/pauloluan/')
+											//- 	i.fa.fa.fa-linkedin
+										//- .speaker-events
+										//- 	h4 Sessões
+										//- 	.speaker-event
+										//- 		span
+										//- 			strong 15/12 - 09:00 -
+										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
 											
 											
 	
@@ -516,4 +632,21 @@ script(src='js/owl.carousel.min.js')
 script(src='js/jquery.stellar.min.js')
 script(src='js/jquery.countTo.js')
 script(src='js/main.js')
+
+script.
+	$("#vermais").on('click', function(){
+
+		if($("#vermais").text() == 'Ver Mais'){
+
+			$("#vermais").text('Ver Menos')
+			$("#williamantoniobox").removeClass('hidden')
+
+		}else{
+
+			$("#vermais").text('Ver Mais')
+			$("#williamantoniobox").addClass('hidden')
+
+		}
+		
+	})
 

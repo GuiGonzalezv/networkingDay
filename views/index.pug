@@ -73,7 +73,8 @@ header#header.transparent-navbar
 // Home
 #home
 	// background image
-	.section-bg(style='background-image:url(./img/ntDayGifEdit2.jpg);', data-stellar-background-ratio='0.5')
+	div(style=" color: black;")
+	.section-bg(style='background-image:url(./img/ntDayGifEdit2.jpg); ', data-stellar-background-ratio='0.5')
 	// /background image
 	// home wrapper
 	.home-wrapper
@@ -182,7 +183,8 @@ header#header.transparent-navbar
 				h3.title
 					span Nossos
 					span(style='color: #1877b6;') Palestrantes
-		
+			
+			//Paulo Kretcheu
 			.col-md-4.col-sm-6#paulokretcheubox
 				.speaker(data-toggle='modal', data-target='#paulokretcheu')
 					.speaker-img
@@ -194,7 +196,8 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Paulo Kretcheu
 							span Administrador de redes
-		
+
+			//Diogo Branquinho
 			.col-md-4.col-sm-6#diogobranquinhobox
 				.speaker(data-toggle='modal', data-target='#diogobranquinho')
 					.speaker-img
@@ -206,7 +209,8 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Diogo Branquinho
 							span System Engineer at TecSUS
-	
+
+			//Django Girls
 			.col-md-4.col-sm-6#djangogirlsbox
 				.speaker(data-toggle='modal', data-target='#djangogirls')
 					.speaker-img
@@ -218,6 +222,8 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Django Girls
 							span Grupo
+			
+			// Py Ladies
 			.col-md-4.col-sm-6#pyladiesbox
 				.speaker(data-toggle='modal', data-target='#pyladies')
 					.speaker-img
@@ -229,6 +235,8 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 PyLadies
 							span Grupo
+
+			//Paulo Luan
 			.col-md-4.col-sm-6#pauloluanbox
 				.speaker(data-toggle='modal', data-target='#pauloluan')
 					.speaker-img
@@ -242,6 +250,8 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Paulo Luan
 							span Dados Abertos
+
+			//Pedro Henrique
 			.col-md-4.col-sm-6#pedrohenriquebox
 				.speaker(data-toggle='modal', data-target='#pedrohenrique')
 					.speaker-img
@@ -256,6 +266,7 @@ header#header.transparent-navbar
 							h2 Pedro Henrique
 							span Software Maintenence Engineer
 			
+			//William Antonio
 			.col-md-4.col-sm-6.hidden#williamantoniobox
 				.speaker(data-toggle='modal', data-target='#williamantonio')
 					.speaker-img
@@ -269,26 +280,56 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 William Antônio
 							span Java Software Engineer
+
+			//Leticia Silva
+			.col-md-4.col-sm-6.hidden#leticiasilvabox
+				.speaker(data-toggle='modal', data-target='#leticiasilva')
+					.speaker-img
+						img.palestrantebox(src='./img/leticiasilva.jpeg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Letícia Silva
+							span Estudante de iniciação científica no INPE
+
+			//Andressa Flavia 
+			.col-md-4.col-sm-6.hidden#andressaflaviabox
+				.speaker(data-toggle='modal', data-target='#andressaflavia')
+					.speaker-img
+						img.palestrantebox(src='./img/andressaflavia.jpeg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Andressa Flavia
+							span Estagiária de Business Technology na Johnson&Johnson
+
+			//Ingrid Sena
+			.col-md-4.col-sm-6.hidden#ingridsenabox
+				.speaker(data-toggle='modal', data-target='#ingridsena')
+					.speaker-img
+						img.palestrantebox(src='./img/ingridsena.jpeg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Ingrid Sena
+							span Desenvolvedora Full-stack
+
+			//Fernanda Ribeiro
+			.col-md-4.col-sm-6.hidden#fernandaribeirobox
+				.speaker(data-toggle='modal', data-target='#fernandaribeiro')
+					.speaker-img
+						img.palestrantebox(src='./img/fernandaribeiro.jpeg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Fernanda Ribeira
+							span SAP SD & PMO Analyst
+
 			.col-md-12.col-md-offset-5
 				btn.btn.btn-primary.btn-lg#vermais Ver Mais
-			//- .col-md-4.col-sm-6
-			//- 	.speaker(data-toggle='modal', data-target='#speaker-modal-1')
-			//- 		.speaker-img
-			//- 			img.palestrantebox(src='./img/speaker03.jpg', alt='')
-			//- 		.speaker-body
-			//- 			.speaker-social
-			//- 				a(href='#')
-			//- 					i.fa.fa-facebook
-			//- 				a(href='#')
-			//- 					i.fa.fa-twitter
-			//- 				a(href='#')
-			//- 					i.fa.fa-instagram
-			//- 				a(href='#')
-			//- 					i.fa.fa.fa-linkedin
-			//- 			.speaker-content
-			//- 				h2 John Doe
-			//- 				span Manager, CEO
-		
+			
+
+			//Paulo Kretcheu Modal
 			#paulokretcheu.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -320,6 +361,7 @@ header#header.transparent-navbar
 											//- 	span
 											//- 		strong Day 2 -
 											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+			//Diogo Branquinho Modal
 			#diogobranquinho.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -351,6 +393,7 @@ header#header.transparent-navbar
 											//- 	span
 											//- 		strong Day 2 -
 											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+			//DjangoGirls Modal
 			#djangogirls.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -382,6 +425,7 @@ header#header.transparent-navbar
 											//- 	span
 											//- 		strong Day 2 -
 											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+			//PyLadies Modal
 			#pyladies.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -413,6 +457,7 @@ header#header.transparent-navbar
 											//- 	span
 											//- 		strong Day 2 -
 											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+			//Dados Aberto Modal
 			#dadosabertos.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -442,6 +487,7 @@ header#header.transparent-navbar
 												span
 													strong 15/12 - 09:00 -
 												p William Siqueira: Dados Abertos : Desenvolvimento
+			//William Antonio Modal
 			#williamantonio.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -471,6 +517,7 @@ header#header.transparent-navbar
 										//- 		span
 										//- 			strong 15/12 - 09:00 -
 										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
+			//Paulo Luan Modal
 			#pauloluan.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -500,6 +547,7 @@ header#header.transparent-navbar
 										//- 		span
 										//- 			strong 15/12 - 09:00 -
 										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
+			//Pedro Henrique Modal
 			#pedrohenrique.speaker-modal.modal.fade
 				.modal-dialog
 					.modal-content
@@ -529,6 +577,89 @@ header#header.transparent-navbar
 										//- 		span
 										//- 			strong 15/12 - 09:00 -
 										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
+			//Leticia Silva Modal
+			#leticiasilva.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/leticiasilva.jpeg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Leticia Silva
+										span.speaker-job - Estudante de iniciação científica no INPE
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| Bio: Graduanda em Ciência da Computação, estudante de iniciação científica no INPE (Instituto Nacional de Pesquisas Espaciais) e colaboradora no IEAv (Instituto de Estudos Avançados), busca fazer do mundo um lugar mais inclusivo para as mulheres e todos os grupos que são considerados minorias. Luta para trazer e incentivar mulheres a entrarem em TI, acreditarem que são capazes e fazer com que elas vejam que programar é incrível e transforma vidas. É organizadora do Django Girls, PyLadies, Devs JavaGirl e Women Techmakers de São José dos Campos, e colabora com iniciativas como o Elas Programam e Training Center.
+										.speaker-social
+
+			//Andressa Flavia Modal
+			#andressaflavia.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/andressaflavia.jpeg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Andressa Flávia
+										span.speaker-job - Estagiária de Business Technology na Johnson&Johnson
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| Graduanda de Análise e Desenvolvimento de Sistemas pela FATEC, estagiária de Business Technology na Johnson&Johnson, organizadora e voluntária Django Girls SJC e PyLadies SJC. Gateira de carteirinha e apaixonada em utilizar tecnologia para melhoria da sociedade.
+										.speaker-social
+
+			//Fernanda Ribeiro Modal
+			#fernandaribeiro.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/fernandaribeiro.jpeg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Fernanda Ribeiro
+										span.speaker-job - SAP SD & PMO Analyst
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| SAP SD & PMO Analyst, graduanda em Engenharia da Computação e Agilista. Voluntária em Django Girls e Co-fundadora do PyLadies São José dos Campos. Nunca sai sem um livro, e acredita que os maiores corações são os que estão sempre abertos a aprender.
+										.speaker-social
+			
+			//Ingrid Sena Modal
+			#ingridsena.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/ingridsena.jpeg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Ingrid Sena
+										span.speaker-job - Desenvolvedora Full-stack
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| Desenvolvedora Full-stack, Agilista, graduanda de Sistemas de Informação e feminista. Organizadora e voluntária de eventos Django Girls e Co-fundadora do PyLadies São José dos Campos. É mãe de gato e acredita que a solução para 99% dos problemas do mundo está na EMPATIA!
+										.speaker-social
 											
 											
 	
@@ -640,11 +771,20 @@ script.
 
 			$("#vermais").text('Ver Menos')
 			$("#williamantoniobox").removeClass('hidden')
+			$("#leticiasilvabox").removeClass('hidden')
+			$("#ingridsenabox").removeClass('hidden')
+			$("#fernandaribeirobox").removeClass('hidden')
+			$("#andressaflaviabox").removeClass('hidden')
+
 
 		}else{
 
 			$("#vermais").text('Ver Mais')
 			$("#williamantoniobox").addClass('hidden')
+			$("#leticiasilvabox").addClass('hidden')
+			$("#ingridsenabox").addClass('hidden')
+			$("#fernandaribeirobox").addClass('hidden')
+			$("#andressaflaviabox").addClass('hidden')
 
 		}
 		

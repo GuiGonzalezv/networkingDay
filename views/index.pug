@@ -30,6 +30,10 @@ style.
 		height: 424px;
 
 	}
+	.sponsor{
+		width: 263px;
+		height: 210px;
+	}
 	.carrouselimg{
 		width: 930px;
 		height: 523px;
@@ -98,7 +102,21 @@ header#header.transparent-navbar
 					span Sobre
 					span(style='color: #1877b6;') NetworkingDay
 			.col-md-8.col-md-offset-2.text-center.text-justify
-				p O Networking Day é um evento para troca de experiências entre profissionais de TI e estudantes. Composto de palestras e oficinas, é uma ótima oportunidade de se fazer networking com profissionais da área apresentando o seu conhecimento. Estudantes da área de TI que quiserem palestrar poderão submeter palestras de até 30 minutos para que sejam avaliadas pela organização do evento. A submissão deverá ocorrer até o dia 20 de outubro por meio do endereço eletrônico <b><i>organizacao.networkingday@gmail.com.</i></b> Serão distribuídos certificados para os palestrantes selecionadas que poderão contar como horas complementares.
+				p O Networking Day é um evento organizado por profissionais de TI e estudantes para troca de experiências entre eles e a interessados em tecnologia de uma forma geral. Com o apoio da ETEC Cônego José Bento (Jacareí/SP), o Networking Day é um evento gratuito composto de palestras e oficinas, sendo uma ótima oportunidade de se fazer networking com profissionais, futuros ou atuais, da área de TI. Para esta primeira edição a ser realizada no dia 15 de Dezembro, são esperadas cerca de 200 pessoas. 
+				p 
+					b Quando:
+					| &nbsp; 15 de Dezembro de 2018
+				p 
+					b Aonde:
+					| &nbsp; ETEC Cônego José Bento (Escola Agrícola), Jacareí, São Paulo, Brasil.
+				p 
+				p
+					b Custo:
+					| &nbsp; Grátis.
+
+				p Convide seus amigos, publicando nas redes sociais: 
+					p
+						b “#NetworkingDay - http://networkingday.herokuapp.com/“
 #galery
 	.container
 		.row
@@ -106,8 +124,8 @@ header#header.transparent-navbar
 				
 				.galery-item
 					img.carrouselimg(src='./img/netdayicon.jpeg', alt='')
-				.galery-item
-					img.carrouselimg(src='./img/imgNetDay.jpeg', alt='')
+				//- .galery-item
+				//- 	img.carrouselimg(src='./img/imgNetDay.jpeg', alt='')
 				.galery-item
 					img.carrouselimg(src='./img/ntday.jpeg', alt='')
 				
@@ -115,66 +133,149 @@ header#header.transparent-navbar
 #schedule.section
 	.container
 		.row
-			.section-title
-				h3.title
-					span(style='color: #1877b6;') Agenda 
-					span Networking Day
-			.col-md-8.col-md-offset-2
-				.events-wrapper
-					.event
-						.event-day
-							div
-								span.day 15
-								span.year Dez, 2018
-						.event-content
-							p.event-time
-								i.fa.fa-clock-o
-							h3.event-title Evento
-							p
-							p
-								a(href='#') 
-					.event
-						.event-hour
-						.event-content
-							p.event-time
-								i.fa.fa-clock-o &nbsp;09:00
-							h3.event-title PyLadies e DjangoGirls: O poder das comunidades de tecnlogia
-							p
-							p
-								a(href='#') DjangoGirls e Pyladies
-				
-					.event
-						.event-hour
-						.event-content
-							p.event-time
-								i.fa.fa-clock-o &nbsp;10:30
-							h3.event-title Dados Aberto - Desenvolvimento
-							p
-							p
-								a(href='#') William Siqueira
+			.col-md-6
+				.section-title
+					h3.title
+						span(style='color: #1877b6;') Agenda 
+						span Auditorio - Oficinas
+				.col-md-12
+					.events-wrapper
+						.event
+							.event-day
+								div
+									span.day 15
+									span.year Dez, 2018
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o
+								h3.event-title Evento
+								p
+								p
+									a(href='#') 
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;09:30
+								h3.event-title PyLadies e DjangoGirls: O poder das comunidades de tecnlogia
+								p
+								p
+									a(href='#') DjangoGirls e Pyladies
 					
-					.event
-						.event-hour
-						.event-content
-							p.event-time
-								i.fa.fa-clock-o &nbsp;13:00
-							h3.event-title Tecnologia e Inovação
-							p
-							p
-								a(href='#') Diogo Branquinho
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;11:00
+								h3.event-title Dados Aberto - Desenvolvimento
+								p
+								p
+									a(href='#') SJC Digital
+						
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;12:00
+								h3.event-title Almoço
+								p
+								p
+									a(href='#') No local haverá cantina que venderá almoço
+						
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;13:30
+								h3.event-title Tecnologia e Inovação
+								p
+								p
+									a(href='#') Diogo Branquinho
 
-					.event
-						.event-hour
-						.event-content
-							p.event-time
-								i.fa.fa-clock-o &nbsp;14:30
-							h3.event-title Software Livre
-							p
-							p
-								a(href='#') Kretcheu
-				
-				.download-btn
-					a.main-btn(href='#') Download da Agenda
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;15:00
+								h3.event-title Software Livre
+								p
+								p
+									a(href='#') Kretcheu
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;16:00
+								h3.event-title Mesa redonda
+								p
+								p
+									a(href='#') 
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;17:00
+								h3.event-title Encerramento
+								p
+								p
+									a(href='#') 
+			.col-md-6
+				.section-title
+					h3.title
+						span(style='color: #1877b6;') Agenda 
+						span Laboratório - Oficinas
+				.col-md-12
+					.events-wrapper
+						.event
+							.event-day
+								div
+									span.day 15
+									span.year Dez, 2018
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o
+								h3.event-title Evento
+								p
+								p
+									a(href='#') 
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;09:00
+								h3.event-title Serviços em nuvem
+								p
+								p
+									a(href='#') Francisco Marcelo
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;10:30
+								h3.event-title Python
+								p
+								p
+									a(href='#') PyLadies e DjangoGirls
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;13:00
+								h3.event-title Dados Abertos
+								p
+								p
+									a(href='#') SJC Digital
+						.event
+							.event-hour
+							.event-content
+								p.event-time
+									i.fa.fa-clock-o &nbsp;14:30
+								h3.event-title App Inventor
+								p
+								p
+									a(href='#') Start Clube de Programação
+		.download-btn
+				a.main-btn(href='#') Download da Agenda
 	
 #speakers.section
 	.container
@@ -324,6 +425,16 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Fernanda Ribeira
 							span SAP SD & PMO Analyst
+			//Francisco Marcelo
+			.col-md-4.col-sm-6.hidden#franciscomarcelobox
+				.speaker(data-toggle='modal', data-target='#franciscomarcelo')
+					.speaker-img
+						img.palestrantebox(src='./img/franciscomarcelo.jpg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Francisco Marcelo
+							span Analista de TI na Embraer
 
 			.col-md-12.col-md-offset-5
 				btn.btn.btn-primary.btn-lg#vermais Ver Mais
@@ -660,6 +771,27 @@ header#header.transparent-navbar
 											p.text-justify 
 												| Desenvolvedora Full-stack, Agilista, graduanda de Sistemas de Informação e feminista. Organizadora e voluntária de eventos Django Girls e Co-fundadora do PyLadies São José dos Campos. É mãe de gato e acredita que a solução para 99% dos problemas do mundo está na EMPATIA!
 										.speaker-social
+			//Francisco Marcelo Modal
+			#franciscomarcelo.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/franciscomarcelo.jpg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Francisco Marcelo
+										span.speaker-job - Analista de TI na Embraer
+										p
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| Analista de TI na Embraer, trabalhando no time de Engenharia de Redes. 20 anos de experiência em Telecomunicações. Especialista em Comunicações sem Fio. Professor ETEC no Curso de Redes de Computadores.
+											p Acadêmico: Mestrando na UNIFESP no programa de Inovação Tecnológica, Tecnólogo em Redes de Computadores pela FATEC e Técnico em Telecomunicações pela ETEP.
+										.speaker-social
 											
 											
 	
@@ -670,30 +802,16 @@ header#header.transparent-navbar
 				h3.title
 					span Nossos
 					span(style='color: #1877b6;') Patrocinadores
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
-			.col-md-3.col-sm-4.col-xs-6
-				a.sponsor(href='#')
-					img(src='./img/sponsor.png', alt='')
+			.col-md-12.col-md-offset-3
+				.col-md-3.col-sm-4.col-xs-6
+					a.sponsor(href='#')
+						img(src='./img/dj.jpg', target="_blank")
+				.col-md-3.col-sm-4.col-xs-6
+					a.sponsor(href='http://etecjbento.com.br/web/' target="_blank")
+						img(src='./img/etec.jpg', alt='')
+		.col-md-8.col-md-offset-2.text-center.text-justify
+			p Caso tenha interesse em associar a sua marca a este envento, por favor, entre em contato conosco através do email “organizacao.networkingday at gmail.com”.
+			
 
 //- #cta.section
 //- 	.section-bg(style='background-image:url(./img/background03.jpg)', data-stellar-background-ratio='0.5')
@@ -712,15 +830,11 @@ header#header.transparent-navbar
 				h3.title
 					span Contato
 					span(style='color: #1877b6;') Info
-			.col-sm-4
+			.col-sm-6.col-md-6
 				.contact
 					h3 Endereço
 					p  Av. Nove de Julho, 745 - Jd. Pereira do Amparo, Jacareí - SP, 12327-682
-			.col-sm-4
-				.contact
-					h3 Telefone
-					p (12) 550550550
-			.col-sm-4
+			.col-sm-6.col-md-6
 				.contact
 					h3 Email
 					a(href='#') organizacao.networkingday@gmail.com
@@ -775,6 +889,8 @@ script.
 			$("#ingridsenabox").removeClass('hidden')
 			$("#fernandaribeirobox").removeClass('hidden')
 			$("#andressaflaviabox").removeClass('hidden')
+			$("#franciscomarcelobox").removeClass('hidden')
+
 
 
 		}else{
@@ -785,6 +901,7 @@ script.
 			$("#ingridsenabox").addClass('hidden')
 			$("#fernandaribeirobox").addClass('hidden')
 			$("#andressaflaviabox").addClass('hidden')
+			$("#franciscomarcelobox").addClass('hidden')
 
 		}
 		

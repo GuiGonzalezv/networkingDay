@@ -89,10 +89,12 @@ header#header.transparent-navbar
 				// home content
 				.col-md-8.col-md-offset-2
 					.home-content
-						//- img(src="img/", alt="")
-						//- h4.lead
-						//- //- a.main-btn(href='#') Comprar ingresso
-		
+						//- a.button-small-text(href='https://www.sympla.com.br/networking-day__417836', target='_blank')
+						//- 	img(src='https://www.sympla.com.br/images/btn-register-widget.png')
+						a(href='', target='_blank')
+							h4.lead
+								a.main-btn(href='https://www.sympla.com.br/networking-day__417836', target='_blank') Inscrever-se
+	
 
 #about.section
 	.container
@@ -560,6 +562,17 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Franco Kaoru Nakasato Gushiken
 							span Estudante de Geoprocessamento
+				
+			//Emerson
+			.col-md-4.col-sm-6.hidden#emersonbox
+				.speaker(data-toggle='modal', data-target='#emerson')
+					.speaker-img
+						img.palestrantebox(src='./img/emerson.jpg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Émerson Henrique de Oliveira
+							span Estudante de Eng. de Computação pela ETEP
 
 			.col-md-12.col-md-offset-5
 				btn.btn.btn-primary.btn-lg#vermais Ver Mais
@@ -978,6 +991,32 @@ header#header.transparent-navbar
 											p.text-justify 
 												| Franco Kaoru Nakasato Gushiken, 56 anos. Possui experiencia como consultor e gerente de TI. Atualmente está cursando o sexto período de Tecnologia em Geoprocessamento na FATEC de Jacareí. Fala Japonês fluente.
 										.speaker-social
+			//Emerson
+			#emerson.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/emerson.jpg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Émerson Henrique de Oliveira
+										span.speaker-job - Estudante de Eng. de Computação pela ETEP
+										p
+										.speaker-social
+											h4 Midias Sociais
+											a(href='https://www.linkedin.com/in/emersonhenrique/', target="_blank")
+												i.fa.fa-linkedin
+											a(href='https://www.facebook.com/emerson.henrique.de.oliveira90', target="_blank")
+												i.fa.fa.fa-facebook
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| Émerson Henrique de Oliveira, 28 anos,proprietário da EAS Tecnologia. Tecnólogo em Redes de Computadores pela FATEC e estudante de Eng. de Computação pela ETEP. Possui experiência em Desenvolvimento de aplicativos, sistema de call center, integração de dados de máquina e SAP,  treinamento e integração de planilhas, banco de dados e processamento de dados utilizando VBA.
+										
 											
 											
 	
@@ -1079,6 +1118,8 @@ script.
 			$("#lucasmacielbox").removeClass('hidden')
 			$("#filipebox").removeClass('hidden')
 			$("#francobox").removeClass('hidden')
+			$("#emersonbox").removeClass('hidden')
+
 
 
 
@@ -1096,6 +1137,8 @@ script.
 			$("#lucasmacielbox").addClass('hidden')
 			$("#filipebox").addClass('hidden')
 			$("#francobox").addClass('hidden')
+			$("#emersonbox").addClass('hidden')
+
 
 
 

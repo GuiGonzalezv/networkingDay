@@ -39,1135 +39,1240 @@ style.
 		height: 523px;
 
 	}
-	
-header#header.transparent-navbar
-	// container
-	.container
-		// navbar header
-		.navbar-header
-			// Logo
-			.navbar-brand
-				a.logo(href='#')
-					img.logo-img(src='./img/netLogo.jpg', alt='logo')
-					img.logo-alt-img(src='./img/netLogo_alt.png', alt='logo')
-			// /Logo
-			// Mobile toggle
-			button.navbar-toggle
-				i.fa.fa-bars
-			// /Mobile toggle
-		// /navbar header
-		// Navigation
-		nav#nav
-			ul.main-nav.nav.navbar-nav.navbar-right
-				li
-					a(href='#home') Inicial
-				li
-					a(href='#about') Sobre
-				li
-					a(href='#schedule') Agenda
-				li
-					a(href='#speakers') Palestrantes
-				li
-					a(href='#sponsors') Patrocinadores
-				li
-					a(href='#contact') Contato
-		// /Navigation
-	// /container
-// /Header
-// Home
-#home
-	// background image
-	div(style=" color: black;")
-	.section-bg(style='background-image:url(./img/ntDayGifEdit2.jpg); ', data-stellar-background-ratio='0.5')
-	// /background image
-	// home wrapper
-	.home-wrapper
+	.containergeral{
+		overflow-x: hidden;
+	}
+.containergeral
+	header#header.transparent-navbar
 		// container
 		.container
-			// row
+			// navbar header
+			.navbar-header
+				// Logo
+				.navbar-brand
+					a.logo(href='#')
+						img.logo-img(src='./img/netLogo.jpg', alt='logo')
+						img.logo-alt-img(src='./img/netLogo_alt.png', alt='logo')
+				// /Logo
+				// Mobile toggle
+				button.navbar-toggle
+					i.fa.fa-bars
+				// /Mobile toggle
+			// /navbar header
+			// Navigation
+			nav#nav
+				ul.main-nav.nav.navbar-nav.navbar-right
+					li
+						a(href='#home') Inicial
+					li
+						a(href='#about') Sobre
+					li
+						a(href='#schedule') Agenda
+					li
+						a(href='#speakers') Palestrantes
+					li
+						a(href='#sponsors') Patrocinadores
+					li
+						a(href='#contact') Contato
+			// /Navigation
+		// /container
+	// /Header
+	// Home
+	#home(style="overflow-x: hidden;")
+		// background image
+		div(style=" color: black;")
+		.section-bg(style='background-image:url(./img/ntDayGifEdit2.jpg); ', data-stellar-background-ratio='0.5')
+		// /background image
+		// home wrapper
+		.home-wrapper
+			// container
+			.container
+				// row
+				.row
+					// home content
+					.col-md-8.col-md-offset-2
+						.home-content
+							//- a.button-small-text(href='https://www.sympla.com.br/networking-day__417836', target='_blank')
+							//- 	img(src='https://www.sympla.com.br/images/btn-register-widget.png')
+							a(href='', target='_blank')
+								h4.lead
+									a.main-btn(href='https://www.sympla.com.br/networking-day__417836', target='_blank') Inscrever-se
+		
+
+	#about.section
+		.container
 			.row
-				// home content
-				.col-md-8.col-md-offset-2
-					.home-content
-						//- a.button-small-text(href='https://www.sympla.com.br/networking-day__417836', target='_blank')
-						//- 	img(src='https://www.sympla.com.br/images/btn-register-widget.png')
-						a(href='', target='_blank')
-							h4.lead
-								a.main-btn(href='https://www.sympla.com.br/networking-day__417836', target='_blank') Inscrever-se
-	
-
-#about.section
-	.container
-		.row
-			.section-title
-				h3.title
-					span Sobre
-					span(style='color: #1877b6;') NetworkingDay
-			.col-md-8.col-md-offset-2.text-center.text-justify
-				p O Networking Day é um evento organizado por profissionais de TI e estudantes para troca de experiências entre eles e a interessados em tecnologia de uma forma geral. Com o apoio da ETEC Cônego José Bento (Jacareí/SP), o Networking Day é um evento gratuito composto de palestras e oficinas, sendo uma ótima oportunidade de se fazer networking com profissionais, futuros ou atuais, da área de TI. Para esta primeira edição a ser realizada no dia 15 de Dezembro, são esperadas cerca de 200 pessoas. 
-				p 
-					b Quando:
-					| &nbsp; 15 de Dezembro de 2018
-				p 
-					b Aonde:
-					| &nbsp; ETEC Cônego José Bento (Escola Agrícola), Jacareí, São Paulo, Brasil.
-				p 
-				p
-					b Custo:
-					| &nbsp; Grátis.
-
-				p Convide seus amigos, publicando nas redes sociais: 
+				.section-title
+					h3.title
+						span Sobre
+						span(style='color: #1877b6;') NetworkingDay
+				.col-md-8.col-md-offset-2.text-center.text-justify
+					p O Networking Day é um evento organizado por profissionais de TI e estudantes para troca de experiências entre eles e a interessados em tecnologia de uma forma geral. Com o apoio da ETEC Cônego José Bento (Jacareí/SP), o Networking Day é um evento gratuito composto de palestras e oficinas, sendo uma ótima oportunidade de se fazer networking com profissionais, futuros ou atuais, da área de TI. Para esta primeira edição a ser realizada no dia 15 de Dezembro, são esperadas cerca de 200 pessoas. 
+					p 
+						b Quando:
+						| &nbsp; 15 de Dezembro de 2018
+					p 
+						b Aonde:
+						| &nbsp; ETEC Cônego José Bento (Escola Agrícola), Jacareí, São Paulo, Brasil.
+					p 
 					p
-						b “#NetworkingDay - http://networkingday.herokuapp.com/“
-#galery
-	.container
-		.row
-			#galery-owl.owl-carousel.owl-theme
-				
-				.galery-item
-					img.carrouselimg(src='./img/netdayicon.jpeg', alt='')
-				//- .galery-item
-				//- 	img.carrouselimg(src='./img/imgNetDay.jpeg', alt='')
-				.galery-item
-					img.carrouselimg(src='./img/ntday.jpeg', alt='')
-				
+						b Custo:
+						| &nbsp; Grátis.
 
-#schedule.section
-	.container
-		.row
-			.col-md-6
-				.section-title
-					h3.title
-						span(style='color: #1877b6;') Agenda 
-						span Auditorio - Oficinas
-				.col-md-12
-					.events-wrapper
-						.event
-							.event-day
-								div
-									span.day 15
-									span.year Dez, 2018
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o
-								h3.event-title Evento
-								p
-								p
-									a(href='#')
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;09:00
-								h3.event-title Competências do Engenheiros da Computação até o ano de 2030
-								p
-								p
-									a(href='#') Lucas Maciel
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;09:30
-								h3.event-title Data Science. O que comem? O que vestem? Onde Vivem?
-								p
-								p
-									a(href='#') André Emídio
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;10:00
-								h3.event-title Industria 4.0
-								p
-								p
-									a(href='#') Emerson Henrique
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;10:30
-								h3.event-title Segurança da Computação em ambiente corporativo
-								p
-								p
-									a(href='#') Filipe Soares Leite
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;11:00
-								h3.event-title Bacula: Medidas de proteção do Backup contra ransomware
-								p
-								p
-									a(href='#') Matheus Machado
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;11:30
-								h3.event-title GNU/Linux, o que é?
-								p
-								p
-									a(href='#') Franco K N G
-						
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;12:00
-								h3.event-title Almoço
-								p
-								p
-									a(href='#') No local haverá cantina que venderá almoço
-
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;13:00
-								h3.event-title PyLadies e DjangoGirls: O poder das comunidades de tecnlogia
-								p
-								p
-									a(href='#') DjangoGirls e Pyladies
+					p Convide seus amigos, publicando nas redes sociais: 
+						p
+							b “#NetworkingDay - http://networkingday.herokuapp.com/“
+	#galery
+		.container
+			.row
+				#galery-owl.owl-carousel.owl-theme
 					
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;14:00
-								h3.event-title Dados Aberto - Desenvolvimento
-								p
-								p
-									a(href='#') SJC Digital
-						
-						
-						
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;15:00
-								h3.event-title Tecnologia e Inovação
-								p
-								p
-									a(href='#') Diogo Branquinho
+					.galery-item
+						img.carrouselimg(src='./img/netdayicon.jpeg', alt='')
+					//- .galery-item
+					//- 	img.carrouselimg(src='./img/imgNetDay.jpeg', alt='')
+					.galery-item
+						img.carrouselimg(src='./img/ntday.jpeg', alt='')
+					
 
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;16:00
-								h3.event-title Software Livre
-								p
-								p
-									a(href='#') Kretcheu
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;17:00
-								h3.event-title Mesa redonda
-								p
-								p
-									a(href='#') 
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;18:00
-								h3.event-title Encerramento
-								p
-								p
-									a(href='#') 
-			.col-md-6
+	#schedule.section
+		.container
+			.row
+				.col-md-6
+					.section-title
+						h3.title
+							span(style='color: #1877b6;') Agenda 
+							span Auditorio - Oficinas
+					.col-md-12
+						.events-wrapper
+							.event
+								.event-day
+									div
+										span.day 15
+										span.year Dez, 2018
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o
+									h3.event-title Evento
+									p
+									p
+										a(href='#')
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;09:00
+									h3.event-title Competências do Engenheiros da Computação até o ano de 2030
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#lucasmaciel') Lucas Maciel
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;09:30
+									h3.event-title Data Science. O que comem? O que vestem? Onde Vivem?
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#andre') André Emídio
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;10:00
+									h3.event-title Industria 4.0
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#emerson') Emerson Henrique
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;10:30
+									h3.event-title Segurança da Computação em ambiente corporativo
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#filipe') Filipe Soares Leite
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;11:00
+									h3.event-title Bacula: Medidas de proteção do Backup contra ransomware
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#machado') Matheus Machado
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;11:30
+									h3.event-title GNU/Linux, o que é?
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#franco') Franco K N G
+							
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;12:00
+									h3.event-title Almoço
+									p
+									p
+										a(href='') No local haverá cantina que venderá almoço
+
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;13:00
+									h3.event-title PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+									p
+									p
+										a(href='') DjangoGirls e Pyladies
+						
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;14:00
+									h3.event-title Dados Aberto - Desenvolvimento
+									p
+									p
+										a(href='', data-toggle='modal', data-target='#dadosabertos') SJC Digital
+							
+							
+							
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;15:00
+									h3.event-title Tecnologia e Inovação
+									p
+									p
+										a(href="", data-toggle='modal', data-target='#diogobranquinho') Diogo Branquinho
+
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;16:00
+									h3.event-title Software Livre
+									p
+									p
+										a(href='', data-toggle='modal', data-target='#paulokretcheu') Kretcheu
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;17:00
+									h3.event-title Mesa redonda
+									p
+									p
+										a(href='') 
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;18:00
+									h3.event-title Encerramento
+									p
+									p
+										a(href='') 
+				.col-md-6
+					.section-title
+						h3.title
+							span(style='color: #1877b6;') Agenda 
+							span Laboratório - Oficinas
+					.col-md-12
+						.events-wrapper
+							.event
+								.event-day
+									div
+										span.day 15
+										span.year Dez, 2018
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o
+									h3.event-title Evento
+									p
+									p
+										a(href='') 
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;09:00
+									h3.event-title Python
+									p
+									p
+										a(href='') PyLadies e DjangoGirls
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;10:30
+									h3.event-title Dados Abertos
+									p
+									p
+										a(href='', data-toggle='modal', data-target='#dadosabertos') SJC Digital
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;12:00
+									h3.event-title Almoço
+									p
+									p
+										a(href='#') No local haverá cantina que venderá almoço
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;13:00
+									h3.event-title Serviços em nuvem
+									p
+									p
+										a(href='', data-toggle='modal', data-target='#franciscomarcelo') Francisco Marcelo
+							
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;14:30
+									h3.event-title App Inventor
+									p
+									p
+										a(href='') Start Clube Teen de Programação
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;17:00
+									h3.event-title Mesa redonda
+									p
+									p
+										a(href='') 
+							.event
+								.event-hour
+								.event-content
+									p.event-time
+										i.fa.fa-clock-o &nbsp;18:00
+									h3.event-title Encerramento
+									p
+									p
+										a(href='')
+			.download-btn
+					a.main-btn(href='#') Download da Agenda
+		
+	#speakers.section
+		.container
+			.row
 				.section-title
 					h3.title
-						span(style='color: #1877b6;') Agenda 
-						span Laboratório - Oficinas
+						span Nossos
+						span(style='color: #1877b6;') Palestrantes
+				
+				//Paulo Kretcheu
+				.col-md-4.col-sm-6#paulokretcheubox
+					.speaker(data-toggle='modal', data-target='#paulokretcheu')
+						.speaker-img
+							img.palestrantebox(src='./img/Kretcheu.jpeg', alt='')
+						.speaker-body
+							.speaker-social
+								a(href='https://br.linkedin.com/in/paulokretcheu', target="_blank")
+									i.fa.fa.fa-linkedin
+							.speaker-content
+								h2 Paulo Kretcheu
+								span Administrador de redes
+
+				//Diogo Branquinho
+				.col-md-4.col-sm-6#diogobranquinhobox
+					.speaker(data-toggle='modal', data-target='#diogobranquinho')
+						.speaker-img
+							img.palestrantebox(src='./img/diogobranquinho.jpeg', alt='')
+						.speaker-body
+							.speaker-social
+								a(href='https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/', target="_blank")
+									i.fa.fa.fa-linkedin
+							.speaker-content
+								h2 Diogo Branquinho
+								span System Engineer at TecSUS
+
+				//Django Girls
+				//- .col-md-4.col-sm-6#djangogirlsbox
+				//- 	.speaker(data-toggle='modal', data-target='#djangogirls')
+				//- 		.speaker-img
+				//- 			img.palestrantebox(src='./img/djangogirls.png', alt='')
+				//- 		.speaker-body
+				//- 			.speaker-social
+				//- 				a(href='https://www.linkedin.com/company/django-girls/', target="_blank")
+				//- 					i.fa.fa.fa-linkedin
+				//- 			.speaker-content
+				//- 				h2 Django Girls
+				//- 				span Grupo
+				
+				// Py Ladies
+				//- .col-md-4.col-sm-6#pyladiesbox
+				//- 	.speaker(data-toggle='modal', data-target='#pyladies')
+				//- 		.speaker-img
+				//- 			img.palestrantebox(src='./img/pyladies.png', alt='')
+				//- 		.speaker-body
+				//- 			.speaker-social
+				//- 				a(href='https://pt-br.facebook.com/pyladiesSJC/', target="_blank")
+				//- 					i.fa.fa.fa-facebook
+				//- 			.speaker-content
+				//- 				h2 PyLadies
+				//- 				span Grupo
+
+				//Paulo Luan
+				.col-md-4.col-sm-6#pauloluanbox
+					.speaker(data-toggle='modal', data-target='#pauloluan')
+						.speaker-img
+							img.palestrantebox(src='./img/pauloluan.png', alt='')
+						.speaker-body
+							.speaker-social
+								a(href='https://www.github.com/pauloluan/', target="_blank")
+									i.fa.fa.fa-github
+								a(href='https://www.linkedin.com/in/pauloluan/', target="_blank")
+									i.fa.fa.fa-linkedin
+							.speaker-content
+								h2 Paulo Luan
+								span Dados Abertos
+
+				//Pedro Henrique
+				.col-md-4.col-sm-6#pedrohenriquebox
+					.speaker(data-toggle='modal', data-target='#pedrohenrique')
+						.speaker-img
+							img.palestrantebox(src='./img/pedrohenrique.jpg', alt='')
+						.speaker-body
+							.speaker-social
+								//- a(href='https://www.facebook.com/sjcdigital/')
+								//- 	i.fa.fa-facebook
+								//- a(href='https://github.com/sjcdigital?language=css')
+								//- 	i.fa.fa.fa-github
+							.speaker-content
+								h2 Pedro Henrique
+								span Software Maintenence Engineer
+				
+				//William Antonio
+				.col-md-4.col-sm-6#williamantoniobox
+					.speaker(data-toggle='modal', data-target='#williamantonio')
+						.speaker-img
+							img.palestrantebox(src='./img/williamantonio.png')
+						.speaker-body
+							.speaker-social
+								a(href='http://fxapps.blogspot.com/', target="_blank")
+									i.fa.fa.fa-globe
+								a(href='https://williamantonio.wordpress.com/', target="_blank")
+									i.fa.fa.fa-wordpress
+							.speaker-content
+								h2 William Antônio
+								span Java Software Engineer
+
+				//Leticia Silva
+				.col-md-4.col-sm-6#leticiasilvabox
+					.speaker(data-toggle='modal', data-target='#leticiasilva')
+						.speaker-img
+							img.palestrantebox(src='./img/leticiasilva.jpeg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Letícia Silva
+								span Estudante de iniciação científica no INPE
+
+				//Andressa Flavia 
+				.col-md-4.col-sm-6.hidden#andressaflaviabox
+					.speaker(data-toggle='modal', data-target='#andressaflavia')
+						.speaker-img
+							img.palestrantebox(src='./img/andressaflavia.jpeg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Andressa Flavia
+								span Estagiária de Business Technology na Johnson&Johnson
+
+				//Ingrid Sena
+				.col-md-4.col-sm-6.hidden#ingridsenabox
+					.speaker(data-toggle='modal', data-target='#ingridsena')
+						.speaker-img
+							img.palestrantebox(src='./img/ingridsena.jpeg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Ingrid Sena
+								span Desenvolvedora Full-stack
+
+				//Fernanda Ribeiro
+				.col-md-4.col-sm-6.hidden#fernandaribeirobox
+					.speaker(data-toggle='modal', data-target='#fernandaribeiro')
+						.speaker-img
+							img.palestrantebox(src='./img/fernandaribeiro.jpeg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Fernanda Ribeira
+								span SAP SD & PMO Analyst
+				//Francisco Marcelo
+				.col-md-4.col-sm-6.hidden#franciscomarcelobox
+					.speaker(data-toggle='modal', data-target='#franciscomarcelo')
+						.speaker-img
+							img.palestrantebox(src='./img/franciscomarcelo.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Francisco Marcelo
+								span Analista de TI na Embraer
+				//Lucas Vinicius Maciel
+				.col-md-4.col-sm-6.hidden#lucasmacielbox
+					.speaker(data-toggle='modal', data-target='#lucasmaciel')
+						.speaker-img
+							img.palestrantebox(src='./img/lucasmaciel.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Lucas Vinicius Maciel
+								span Estudante de Engenharia da Computação
+				//Francisco Marcelo
+				.col-md-4.col-sm-6.hidden#franciscomarcelobox
+					.speaker(data-toggle='modal', data-target='#franciscomarcelo')
+						.speaker-img
+							img.palestrantebox(src='./img/franciscomarcelo.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Francisco Marcelo
+								span Analista de TI na Embraer
+				//Filipe
+				.col-md-4.col-sm-6.hidden#filipebox
+					.speaker(data-toggle='modal', data-target='#filipe')
+						.speaker-img
+							img.palestrantebox(src='./img/filipe.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Filipe Soares Leite
+								span Estudante de Ciência da Computação
+				//Franco
+				.col-md-4.col-sm-6.hidden#francobox
+					.speaker(data-toggle='modal', data-target='#franco')
+						.speaker-img
+							img.palestrantebox(src='./img/franco.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Franco Kaoru Nakasato Gushiken
+								span Estudante de Geoprocessamento
+					
+				//Emerson
+				.col-md-4.col-sm-6.hidden#emersonbox
+					.speaker(data-toggle='modal', data-target='#emerson')
+						.speaker-img
+							img.palestrantebox(src='./img/emerson.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Émerson Henrique de Oliveira
+								span Estudante de Eng. de Computação pela ETEP
+				//Andre
+				.col-md-4.col-sm-6.hidden#andrebox
+					.speaker(data-toggle='modal', data-target='#andre')
+						.speaker-img
+							img.palestrantebox(src='./img/andre.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 André Emídio 
+								span Possui experiência com suporte técnico
+				
+				//Machado
+				.col-md-4.col-sm-6.hidden#machadobox
+					.speaker(data-toggle='modal', data-target='#machado')
+						.speaker-img
+							img.palestrantebox(src='./img/machado.jpg', alt='')
+						.speaker-body
+							.speaker-social
+							.speaker-content
+								h2 Mateus Machado de Souza
+								span Graduando em Banco de Dados
+
+				.col-md-12.col-md-offset-5
+					btn.btn.btn-primary.btn-lg#vermais Ver Mais
+				
+
+				//Paulo Kretcheu Modal
+				#paulokretcheu.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/Kretcheu.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Paulo Kretcheu
+											span.speaker-job - Administrador de Redes
+											p
+											.speaker-website
+												h4 Apresentador do Vídeo Blog
+												a(href='http://www.kretcheu.com.br', target="_blank") www.kretcheu.com.br
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://br.linkedin.com/in/paulokretcheu', target="_blank")
+													i.fa.fa.fa-linkedin
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 16:00 -
+													p Software Livre
+												//- .speaker-event
+												//- 	span
+												//- 		strong Day 2 -
+												//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+				//Diogo Branquinho Modal
+				#diogobranquinho.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/diogobranquinho.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Diogo Branquinho Ramos
+											span.speaker-job - System Engineer at TecSUS
+											p
+											.speaker-website
+												h4 Linkedin
+												a(href='https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/', target="_blank") https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/', target="_blank")
+													i.fa.fa.fa-linkedin
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 15:00 -
+													p Tecnologia e inovação
+												//- .speaker-event
+												//- 	span
+												//- 		strong Day 2 -
+												//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+				//DjangoGirls Modal
+				#djangogirls.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/djangogirls.png', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Django Girls
+											span.speaker-job - Grupo
+											p
+											.speaker-website
+												h4 Site
+												a(href='https://djangogirls.org/saojosedoscampos/', target="_blank") https://djangogirls.org/saojosedoscampos/
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://www.linkedin.com/company/django-girls/', target="_blank")
+													i.fa.fa.fa-linkedin
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:00 - Lab
+													p PyLadies e DjangoGirls: Python
+												.speaker-event
+													span
+														strong 15/12 - 13:00 -
+													p PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+												
+												//- .speaker-event
+												//- 	span
+												//- 		strong Day 2 -
+												//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+				//PyLadies Modal
+				#pyladies.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/pyladies.png', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name PyLadies
+											span.speaker-job - Grupo
+											p
+											.speaker-website
+												h4 Site
+												a(href='http://vale.pyladies.com/', target="_blank") http://vale.pyladies.com/
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://pt-br.facebook.com/pyladiesSJC/', target="_blank")
+													i.fa.fa.fa-facebook
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 13:00 -
+													p PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+												//- .speaker-event
+												//- 	span
+												//- 		strong Day 2 -
+												//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
+				//Dados Aberto Modal
+				#dadosabertos.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/dadosabertos.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Dados Abertos
+											span.speaker-job - Grupo
+											p
+											.speaker-website
+												h4 Site
+												a(href='http://sjcdigital.com/', target="_blank") http://sjcdigital.com/
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://github.com/sjcdigital?language=css')
+													i.fa.fa.fa-github
+												a(href='https://www.facebook.com/sjcdigital/', target="_blank")
+													i.fa.fa.fa-facebook
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 14:00 -
+													p Dados Abertos : Desenvolvimento
+												.speaker-event
+													span
+														strong 15/12 - 10:30 - Lab
+													p Dados Abertos 
+				//William Antonio Modal
+				#williamantonio.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/williamantonio.png', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name William Antonio
+											span.speaker-job - Java Software Engineer
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify Formado na FATEC de São José dos Campos, fez curso de extensão em Tecnologia na UFABC e tem 10 anos de experiência na área de TI. Trabalhou com ABAP, Business Objects, Linguagem C e foiEngenheiro de Manutenção na Red Hat atuando com ferramentas JBoss, principalmente com APIs REST, jBPM (BPM Suite) e Drools (BRMS) e atualmente é Especialista de Software no time Business Automation Engineering. É membro do grupo SJC Digital onde trabalha com aplicações para explorar dados abertos, incluindo o projeto Repasse. Apaixonado por open source e Java, começou a trabalhar com JavaFX desde a versão 1.0, fundou o primeiro grupo brasileiro e mantém diversos blogs em portugês sobre Java. Apresentou em diversos eventos como Java One, TDC, FISL e é um dos organizadores do grupo de usuários do Vale do Paraíba, o JUG Vale
+											.speaker-social
+												h4 Midias Sociais
+												a(href='http://fxapps.blogspot.com/', target="_blank")
+													i.fa.fa.fa-globe
+												a(href='https://williamantonio.wordpress.com/', target="_blank")
+													i.fa.fa.fa-wordpress
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 14:00 -
+													p Dados Abertos : Desenvolvimento
+												.speaker-event
+													span
+														strong 15/12 - 10:30 - Lab
+													p Dados Abertos 
+				//Paulo Luan Modal
+				#pauloluan.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/pauloluan.png', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Paulo Luan
+											span.speaker-job - Desenvolvedor
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify Mais de 8 anos de xp em desenvolvimento, Trabalhou nas maiores consultorias de software do país em projetos de grande relevância como o backend do internet banking de um dos maiores bancos da américa latina e um ecommerce global de vendas da Motorola. Apaixonado por software livre, Hacker-ativista e aspirante a empreendedor.
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://www.github.com/pauloluan/', target="_blank")
+													i.fa.fa.fa-github
+												a(href='https://www.linkedin.com/in/pauloluan/', target="_blank")
+													i.fa.fa.fa-linkedin
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 14:00 -
+													p Dados Abertos : Desenvolvimento
+												.speaker-event
+													span
+														strong 15/12 - 10:30 - Lab
+													p Dados Abertos 
+				//Pedro Henrique Modal
+				#pedrohenrique.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/pedrohenrique.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Pedro Henrique
+											span.speaker-job - Software Maintenence Engineer
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify Pedro Henrique de Oliveira Silva (Pedro Hos) É graduado em Banco de Dados pela FATEC-SJC, Software Maintenence Engineer na Red Hat, organizador do JUG Vale e idealizador do SJC Digital. Acredita que dados abertos e opensource pode mudar o mundo.
+											.speaker-social
+												//- h4 Midias Sociais
+												//- a(href='https://www.github.com/pauloluan/')
+												//- 	i.fa.fa.fa-github
+												//- a(href='https://www.linkedin.com/in/pauloluan/')
+												//- 	i.fa.fa.fa-linkedin
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 14:00 -
+													p Dados Abertos : Desenvolvimento
+												.speaker-event
+													span
+														strong 15/12 - 10:30 - Lab
+													p Dados Abertos 
+				//Leticia Silva Modal
+				#leticiasilva.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/leticiasilva.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Leticia Silva
+											span.speaker-job - Estudante de iniciação científica no INPE
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Bio: Graduanda em Ciência da Computação, estudante de iniciação científica no INPE (Instituto Nacional de Pesquisas Espaciais) e colaboradora no IEAv (Instituto de Estudos Avançados), busca fazer do mundo um lugar mais inclusivo para as mulheres e todos os grupos que são considerados minorias. Luta para trazer e incentivar mulheres a entrarem em TI, acreditarem que são capazes e fazer com que elas vejam que programar é incrível e transforma vidas. É organizadora do Django Girls, PyLadies, Devs JavaGirl e Women Techmakers de São José dos Campos, e colabora com iniciativas como o Elas Programam e Training Center.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:00 - Lab
+													p PyLadies e DjangoGirls: Python
+												.speaker-event
+													span
+														strong 15/12 - 13:00 -
+													p PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+
+				//Andressa Flavia Modal
+				#andressaflavia.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/andressaflavia.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Andressa Flávia
+											span.speaker-job - Estagiária de Business Technology na Johnson&Johnson
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Graduanda de Análise e Desenvolvimento de Sistemas pela FATEC, estagiária de Business Technology na Johnson&Johnson, organizadora e voluntária Django Girls SJC e PyLadies SJC. Gateira de carteirinha e apaixonada em utilizar tecnologia para melhoria da sociedade.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:00 - Lab
+													p PyLadies e DjangoGirls: Python
+												.speaker-event
+													span
+														strong 15/12 - 13:00 -
+													p PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+
+				//Fernanda Ribeiro Modal
+				#fernandaribeiro.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/fernandaribeiro.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Fernanda Ribeiro
+											span.speaker-job - SAP SD & PMO Analyst
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| SAP SD & PMO Analyst, graduanda em Engenharia da Computação e Agilista. Voluntária em Django Girls e Co-fundadora do PyLadies São José dos Campos. Nunca sai sem um livro, e acredita que os maiores corações são os que estão sempre abertos a aprender.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:00 - Lab
+													p PyLadies e DjangoGirls: Python
+												.speaker-event
+													span
+														strong 15/12 - 13:00 -
+													p PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+				
+				//Ingrid Sena Modal
+				#ingridsena.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/ingridsena.jpeg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Ingrid Sena
+											span.speaker-job - Desenvolvedora Full-stack
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Desenvolvedora Full-stack, Agilista, graduanda de Sistemas de Informação e feminista. Organizadora e voluntária de eventos Django Girls e Co-fundadora do PyLadies São José dos Campos. É mãe de gato e acredita que a solução para 99% dos problemas do mundo está na EMPATIA!
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:00 - Lab
+													p PyLadies e DjangoGirls: Python
+												.speaker-event
+													span
+														strong 15/12 - 13:00 -
+													p PyLadies e DjangoGirls: O poder das comunidades de tecnologia
+				//Francisco Marcelo Modal
+				#franciscomarcelo.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/franciscomarcelo.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Francisco Marcelo
+											span.speaker-job - Analista de TI na Embraer
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Analista de TI na Embraer, trabalhando no time de Engenharia de Redes. 20 anos de experiência em Telecomunicações. Especialista em Comunicações sem Fio. Professor ETEC no Curso de Redes de Computadores.
+												p Acadêmico: Mestrando na UNIFESP no programa de Inovação Tecnológica, Tecnólogo em Redes de Computadores pela FATEC e Técnico em Telecomunicações pela ETEP.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 13:00 - Lab
+													p Serviços em nuvem
+				//Lucas Maciel Modal
+				#lucasmaciel.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/lucasmaciel.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Lucas Maciel
+											span.speaker-job - Estudante de Engenharia da Computação
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Lucas Vinícius Maciel (24 anos). Técnico em Logística e Redes de Computadores formado pela ETEC, com graduação em Gestão de Recursos Humanos e atualmente cursando Engenharia da Computação pela UNIVESP na cidade de Igaratá. Trabalha com analise de vulnerabilidade, planejamento e implementação de sistemas de segurança em áreas comerciais e residenciais.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:00 -
+													p Competências do Engenheiro da Computação até o ano de 2030
+					
+				//Filipe Modal
+				#filipe.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/filipe.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Filipe Soares Leite
+											span.speaker-job - Estudante de Ciência da Computação
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Filipe Soares Leite, 26 anos. Técnico de informática pelo colégio Opção e em redes pelo Senai. Cursando ultimo semestre  de Ciências da Computação pelo Bilac. Trabalha em uma empresa de Materiais para Construção na qual é responsável por toda estrutura operacional de TI, como suporte em ERP, servidores Windows e Linux, cabeamento, etc.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 10:30 -
+													p Segurança da Computação em ambiente corporativo
+				//Franco Modal
+				#franco.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/franco.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Franco Kaoru Nakasato Gushiken
+											span.speaker-job - Estudante de Geoprocessamento
+											p
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Franco Kaoru Nakasato Gushiken, 56 anos. Possui experiencia como consultor e gerente de TI. Atualmente está cursando o sexto período de Tecnologia em Geoprocessamento na FATEC de Jacareí. Fala Japonês fluente.
+											.speaker-social
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 11:30 -
+													p GNU/Linux, o que é?
+
+				//Emerson
+				#emerson.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/emerson.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Émerson Henrique de Oliveira
+											span.speaker-job - Estudante de Eng. de Computação pela ETEP
+											p
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://www.linkedin.com/in/emersonhenrique/', target="_blank")
+													i.fa.fa-linkedin
+												a(href='https://www.facebook.com/emerson.henrique.de.oliveira90', target="_blank")
+													i.fa.fa.fa-facebook
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Émerson Henrique de Oliveira, 28 anos,proprietário da EAS Tecnologia. Tecnólogo em Redes de Computadores pela FATEC e estudante de Eng. de Computação pela ETEP. Possui experiência em Desenvolvimento de aplicativos, sistema de call center, integração de dados de máquina e SAP,  treinamento e integração de planilhas, banco de dados e processamento de dados utilizando VBA.
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 10:00 -
+													p Industria 4.0
+				//Andre
+				#andre.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/andre.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name André Emídio
+											span.speaker-job - Possui experiência com suporte técnico
+											p
+											.speaker-social
+												h4 Midias Sociais
+												a(href='https://www.linkedin.com/in/andre-emidio/', target="_blank")
+													i.fa.fa-linkedin
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| André Emídio possui experiência com suporte técnico e começou a estudar data science há pouco tempo. Viu nesta  área um desafio enorme e interessante e assim faz divulgação de conhecimento. Gosta de Harry Potter e cultura nerd e joga Rugby nas horas vagas.
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 09:30 -
+													p Data Science. O que comem? O que vestem? Onde vivem?
+												
+				//Machado
+				#machado.speaker-modal.modal.fade
+					.modal-dialog
+						.modal-content
+							button.speaker-modal-close(type='button', data-dismiss='modal')
+							.modal-body
+								.row
+									.col-md-5
+										.speaker-modal-img
+											img(src='./img/machado.jpg', alt='')
+									.col-md-7
+										.speaker-modal-content
+											h2.speaker-name Mateus Machado de Souza
+											span.speaker-job - Graduando em Banco de Dados pela Fatec
+											p
+											.speaker-social
+												//- h4 Midias Sociais
+												//- a(href='https://www.linkedin.com/in/andre-emidio/', target="_blank")
+												//- 	i.fa.fa-linkedin
+											.speaker-website
+												h4 Biografia
+												p.text-justify 
+													| Mateus Machado de Souza é graduando em Banco de Dados pela Fatec São José dos Campos e técnico em Redes de Computadores pela Etec Cônego José Bento. Gosta de codar na madrugs e é entusiasta em segurança de redes.							
+											.speaker-events
+												h4 Sessões
+												.speaker-event
+													span
+														strong 15/12 - 11:00 -
+													p Bacula: Medidas de proteção do Backup contra ransomware
+
+	#sponsors.section
+		.container
+			.row
+				.section-title
+					h3.title
+						span Nossos
+						span(style='color: #1877b6;') Patrocinadores
 				.col-md-12
-					.events-wrapper
-						.event
-							.event-day
-								div
-									span.day 15
-									span.year Dez, 2018
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o
-								h3.event-title Evento
-								p
-								p
-									a(href='#') 
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;09:00
-								h3.event-title Python
-								p
-								p
-									a(href='#') PyLadies e DjangoGirls
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;10:30
-								h3.event-title Dados Abertos
-								p
-								p
-									a(href='#') SJC Digital
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;12:00
-								h3.event-title Almoço
-								p
-								p
-									a(href='#') No local haverá cantina que venderá almoço
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;13:00
-								h3.event-title Serviços em nuvem
-								p
-								p
-									a(href='#') Francisco Marcelo
-						
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;14:30
-								h3.event-title App Inventor
-								p
-								p
-									a(href='#') Start Clube Teen de Programação
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;17:00
-								h3.event-title Mesa redonda
-								p
-								p
-									a(href='#') 
-						.event
-							.event-hour
-							.event-content
-								p.event-time
-									i.fa.fa-clock-o &nbsp;18:00
-								h3.event-title Encerramento
-								p
-								p
-									a(href='#')
-		.download-btn
-				a.main-btn(href='#') Download da Agenda
-	
-#speakers.section
-	.container
-		.row
-			.section-title
-				h3.title
-					span Nossos
-					span(style='color: #1877b6;') Palestrantes
-			
-			//Paulo Kretcheu
-			.col-md-4.col-sm-6#paulokretcheubox
-				.speaker(data-toggle='modal', data-target='#paulokretcheu')
-					.speaker-img
-						img.palestrantebox(src='./img/Kretcheu.jpeg', alt='')
-					.speaker-body
-						.speaker-social
-							a(href='https://br.linkedin.com/in/paulokretcheu', target="_blank")
-								i.fa.fa.fa-linkedin
-						.speaker-content
-							h2 Paulo Kretcheu
-							span Administrador de redes
-
-			//Diogo Branquinho
-			.col-md-4.col-sm-6#diogobranquinhobox
-				.speaker(data-toggle='modal', data-target='#diogobranquinho')
-					.speaker-img
-						img.palestrantebox(src='./img/diogobranquinho.jpeg', alt='')
-					.speaker-body
-						.speaker-social
-							a(href='https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/', target="_blank")
-								i.fa.fa.fa-linkedin
-						.speaker-content
-							h2 Diogo Branquinho
-							span System Engineer at TecSUS
-
-			//Django Girls
-			.col-md-4.col-sm-6#djangogirlsbox
-				.speaker(data-toggle='modal', data-target='#djangogirls')
-					.speaker-img
-						img.palestrantebox(src='./img/djangogirls.png', alt='')
-					.speaker-body
-						.speaker-social
-							a(href='https://www.linkedin.com/company/django-girls/', target="_blank")
-								i.fa.fa.fa-linkedin
-						.speaker-content
-							h2 Django Girls
-							span Grupo
-			
-			// Py Ladies
-			.col-md-4.col-sm-6#pyladiesbox
-				.speaker(data-toggle='modal', data-target='#pyladies')
-					.speaker-img
-						img.palestrantebox(src='./img/pyladies.png', alt='')
-					.speaker-body
-						.speaker-social
-							a(href='https://pt-br.facebook.com/pyladiesSJC/', target="_blank")
-								i.fa.fa.fa-facebook
-						.speaker-content
-							h2 PyLadies
-							span Grupo
-
-			//Paulo Luan
-			.col-md-4.col-sm-6#pauloluanbox
-				.speaker(data-toggle='modal', data-target='#pauloluan')
-					.speaker-img
-						img.palestrantebox(src='./img/sjcdigital.jpg', alt='')
-					.speaker-body
-						.speaker-social
-							a(href='https://www.github.com/pauloluan/', target="_blank")
-								i.fa.fa.fa-github
-							a(href='https://www.linkedin.com/in/pauloluan/', target="_blank")
-								i.fa.fa.fa-linkedin
-						.speaker-content
-							h2 Paulo Luan
-							span Dados Abertos
-
-			//Pedro Henrique
-			.col-md-4.col-sm-6#pedrohenriquebox
-				.speaker(data-toggle='modal', data-target='#pedrohenrique')
-					.speaker-img
-						img.palestrantebox(src='./img/sjcdigital.jpg', alt='')
-					.speaker-body
-						.speaker-social
-							//- a(href='https://www.facebook.com/sjcdigital/')
-							//- 	i.fa.fa-facebook
-							//- a(href='https://github.com/sjcdigital?language=css')
-							//- 	i.fa.fa.fa-github
-						.speaker-content
-							h2 Pedro Henrique
-							span Software Maintenence Engineer
-			
-			//William Antonio
-			.col-md-4.col-sm-6.hidden#williamantoniobox
-				.speaker(data-toggle='modal', data-target='#williamantonio')
-					.speaker-img
-						img.palestrantebox(src='./img/sjcdigital.jpg', alt='')
-					.speaker-body
-						.speaker-social
-							a(href='http://fxapps.blogspot.com/', target="_blank")
-								i.fa.fa.fa-globe
-							a(href='https://williamantonio.wordpress.com/', target="_blank")
-								i.fa.fa.fa-wordpress
-						.speaker-content
-							h2 William Antônio
-							span Java Software Engineer
-
-			//Leticia Silva
-			.col-md-4.col-sm-6.hidden#leticiasilvabox
-				.speaker(data-toggle='modal', data-target='#leticiasilva')
-					.speaker-img
-						img.palestrantebox(src='./img/meninaspython.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Letícia Silva
-							span Estudante de iniciação científica no INPE
-
-			//Andressa Flavia 
-			.col-md-4.col-sm-6.hidden#andressaflaviabox
-				.speaker(data-toggle='modal', data-target='#andressaflavia')
-					.speaker-img
-						img.palestrantebox(src='./img/meninaspython.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Andressa Flavia
-							span Estagiária de Business Technology na Johnson&Johnson
-
-			//Ingrid Sena
-			.col-md-4.col-sm-6.hidden#ingridsenabox
-				.speaker(data-toggle='modal', data-target='#ingridsena')
-					.speaker-img
-						img.palestrantebox(src='./img/meninaspython.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Ingrid Sena
-							span Desenvolvedora Full-stack
-
-			//Fernanda Ribeiro
-			.col-md-4.col-sm-6.hidden#fernandaribeirobox
-				.speaker(data-toggle='modal', data-target='#fernandaribeiro')
-					.speaker-img
-						img.palestrantebox(src='./img/meninaspython.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Fernanda Ribeira
-							span SAP SD & PMO Analyst
-			//Francisco Marcelo
-			.col-md-4.col-sm-6.hidden#franciscomarcelobox
-				.speaker(data-toggle='modal', data-target='#franciscomarcelo')
-					.speaker-img
-						img.palestrantebox(src='./img/franciscomarcelo.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Francisco Marcelo
-							span Analista de TI na Embraer
-			//Lucas Vinicius Maciel
-			.col-md-4.col-sm-6.hidden#lucasmacielbox
-				.speaker(data-toggle='modal', data-target='#lucasmaciel')
-					.speaker-img
-						img.palestrantebox(src='./img/lucasmaciel.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Lucas Vinicius Maciel
-							span Estudante de Engenharia da Computação
-			//Francisco Marcelo
-			.col-md-4.col-sm-6.hidden#franciscomarcelobox
-				.speaker(data-toggle='modal', data-target='#franciscomarcelo')
-					.speaker-img
-						img.palestrantebox(src='./img/franciscomarcelo.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Francisco Marcelo
-							span Analista de TI na Embraer
-			//Filipe
-			.col-md-4.col-sm-6.hidden#filipebox
-				.speaker(data-toggle='modal', data-target='#filipe')
-					.speaker-img
-						img.palestrantebox(src='./img/filipe.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Filipe Soares Leite
-							span Estudante de Ciência da Computação
-			//Franco
-			.col-md-4.col-sm-6.hidden#francobox
-				.speaker(data-toggle='modal', data-target='#franco')
-					.speaker-img
-						img.palestrantebox(src='./img/franco.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Franco Kaoru Nakasato Gushiken
-							span Estudante de Geoprocessamento
+					.col-md-3.col-sm-4.col-xs-6
+						a.sponsor()
+							img.sponsor(src='./img/dj.jpg', target="_blank")
+					.col-md-3.col-sm-4.col-xs-6
+						a.sponsor(href='http://etecjbento.com.br/web/' target="_blank")
+							img.sponsor(src='./img/etec.jpg', alt='')
+					.col-md-3.col-sm-4.col-xs-6
+						a.sponsor(href='http://www.kumon.com.br/' target="_blank")
+							img.sponsor(src='./img/kumon.jpg', alt='')
+					.col-md-3.col-sm-4.col-xs-6
+						a.sponsor(href='https://www.facebook.com/ukschool/' target="_blank")
+							img.sponsor(src='./img/uk.jpg', alt='')
+					
+			.col-md-8.col-md-offset-2.text-center.text-justify
+				p Caso tenha interesse em associar a sua marca a este envento, por favor, entre em contato conosco através do email “organizacao.networkingday at gmail.com”.
 				
-			//Emerson
-			.col-md-4.col-sm-6.hidden#emersonbox
-				.speaker(data-toggle='modal', data-target='#emerson')
-					.speaker-img
-						img.palestrantebox(src='./img/emerson.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Émerson Henrique de Oliveira
-							span Estudante de Eng. de Computação pela ETEP
-			//Andre
-			.col-md-4.col-sm-6.hidden#andrebox
-				.speaker(data-toggle='modal', data-target='#andre')
-					.speaker-img
-						img.palestrantebox(src='./img/andre.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 André Emídio 
-							span Possui experiência com suporte técnico
+
+	//- #cta.section
+	//- 	.section-bg(style='background-image:url(./img/background03.jpg)', data-stellar-background-ratio='0.5')
+	//- 	.container
+	//- 		.row
+	//- 			.col-md-8.col-md-offset-2
+	//- 				.cta-content.text-center
+	//- 					h2 Comprar ingresso
+	//- 					p.lead
+	//- 					a.main-btn(href='#') Comprar Ingresso
 			
-			//Machado
-			.col-md-4.col-sm-6.hidden#machadobox
-				.speaker(data-toggle='modal', data-target='#machado')
-					.speaker-img
-						img.palestrantebox(src='./img/machado.jpg', alt='')
-					.speaker-body
-						.speaker-social
-						.speaker-content
-							h2 Mateus Machado de Souza
-							span Graduando em Banco de Dados
-
-			.col-md-12.col-md-offset-5
-				btn.btn.btn-primary.btn-lg#vermais Ver Mais
-			
-
-			//Paulo Kretcheu Modal
-			#paulokretcheu.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/Kretcheu.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Paulo Kretcheu
-										span.speaker-job - Administrador de Redes
-										p
-										.speaker-website
-											h4 Apresentador do Vídeo Blog
-											a(href='http://www.kretcheu.com.br', target="_blank") www.kretcheu.com.br
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://br.linkedin.com/in/paulokretcheu', target="_blank")
-												i.fa.fa.fa-linkedin
-										.speaker-events
-											h4 Sessões
-											.speaker-event
-												span
-													strong 15/12 - 14:30 -
-												p Software Livre
-											//- .speaker-event
-											//- 	span
-											//- 		strong Day 2 -
-											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
-			//Diogo Branquinho Modal
-			#diogobranquinho.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/diogobranquinho.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Diogo Branquinho Ramos
-										span.speaker-job - System Engineer at TecSUS
-										p
-										.speaker-website
-											h4 Linkedin
-											a(href='https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/', target="_blank") https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://www.linkedin.com/in/diogo-branquinho-ramos-a964766/', target="_blank")
-												i.fa.fa.fa-linkedin
-										.speaker-events
-											h4 Sessões
-											.speaker-event
-												span
-													strong 15/12 - 13:00 -
-												p Tecnologia e inovação
-											//- .speaker-event
-											//- 	span
-											//- 		strong Day 2 -
-											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
-			//DjangoGirls Modal
-			#djangogirls.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/djangogirls.png', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Django Girls
-										span.speaker-job - Grupo
-										p
-										.speaker-website
-											h4 Site
-											a(href='https://djangogirls.org/saojosedoscampos/', target="_blank") https://djangogirls.org/saojosedoscampos/
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://www.linkedin.com/company/django-girls/', target="_blank")
-												i.fa.fa.fa-linkedin
-										.speaker-events
-											h4 Sessões
-											.speaker-event
-												span
-													strong 15/12 - 09:00 -
-												p PyLadies e DjangoGirls: O poder das comunidades de tecnlogia
-											//- .speaker-event
-											//- 	span
-											//- 		strong Day 2 -
-											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
-			//PyLadies Modal
-			#pyladies.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/pyladies.png', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name PyLadies
-										span.speaker-job - Grupo
-										p
-										.speaker-website
-											h4 Site
-											a(href='http://vale.pyladies.com/', target="_blank") http://vale.pyladies.com/
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://pt-br.facebook.com/pyladiesSJC/', target="_blank")
-												i.fa.fa.fa-facebook
-										.speaker-events
-											h4 Sessões
-											.speaker-event
-												span
-													strong 15/12 - 09:00 -
-												p PyLadies e DjangoGirls: O poder das comunidades de tecnlogia
-											//- .speaker-event
-											//- 	span
-											//- 		strong Day 2 -
-											//- 	p At mucius deserunt delicatissimi eam, labitur detraxit ut sit
-			//Dados Aberto Modal
-			#dadosabertos.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/dadosabertos.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Dados Abertos
-										span.speaker-job - Grupo
-										p
-										.speaker-website
-											h4 Site
-											a(href='http://sjcdigital.com/', target="_blank") http://sjcdigital.com/
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://github.com/sjcdigital?language=css')
-												i.fa.fa.fa-github
-											a(href='https://www.facebook.com/sjcdigital/', target="_blank")
-												i.fa.fa.fa-facebook
-										.speaker-events
-											h4 Sessões
-											.speaker-event
-												span
-													strong 15/12 - 09:00 -
-												p William Siqueira: Dados Abertos : Desenvolvimento
-			//William Antonio Modal
-			#williamantonio.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/williamantonio.png', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name William Antonio
-										span.speaker-job - Java Software Engineer
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify Formado na FATEC de São José dos Campos, fez curso de extensão em Tecnologia na UFABC e tem 10 anos de experiência na área de TI. Trabalhou com ABAP, Business Objects, Linguagem C e foiEngenheiro de Manutenção na Red Hat atuando com ferramentas JBoss, principalmente com APIs REST, jBPM (BPM Suite) e Drools (BRMS) e atualmente é Especialista de Software no time Business Automation Engineering. É membro do grupo SJC Digital onde trabalha com aplicações para explorar dados abertos, incluindo o projeto Repasse. Apaixonado por open source e Java, começou a trabalhar com JavaFX desde a versão 1.0, fundou o primeiro grupo brasileiro e mantém diversos blogs em portugês sobre Java. Apresentou em diversos eventos como Java One, TDC, FISL e é um dos organizadores do grupo de usuários do Vale do Paraíba, o JUG Vale
-										.speaker-social
-											h4 Midias Sociais
-											a(href='http://fxapps.blogspot.com/', target="_blank")
-												i.fa.fa.fa-globe
-											a(href='https://williamantonio.wordpress.com/', target="_blank")
-												i.fa.fa.fa-wordpress
-										//- .speaker-events
-										//- 	h4 Sessões
-										//- 	.speaker-event
-										//- 		span
-										//- 			strong 15/12 - 09:00 -
-										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
-			//Paulo Luan Modal
-			#pauloluan.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/pauloluan.png', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Paulo Luan
-										span.speaker-job - Desenvolvedor
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify Mais de 8 anos de xp em desenvolvimento, Trabalhou nas maiores consultorias de software do país em projetos de grande relevância como o backend do internet banking de um dos maiores bancos da américa latina e um ecommerce global de vendas da Motorola. Apaixonado por software livre, Hacker-ativista e aspirante a empreendedor.
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://www.github.com/pauloluan/', target="_blank")
-												i.fa.fa.fa-github
-											a(href='https://www.linkedin.com/in/pauloluan/', target="_blank")
-												i.fa.fa.fa-linkedin
-										//- .speaker-events
-										//- 	h4 Sessões
-										//- 	.speaker-event
-										//- 		span
-										//- 			strong 15/12 - 09:00 -
-										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
-			//Pedro Henrique Modal
-			#pedrohenrique.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/pedrohenrique.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Pedro Henrique
-										span.speaker-job - Software Maintenence Engineer
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify Pedro Henrique de Oliveira Silva (Pedro Hos) É graduado em Banco de Dados pela FATEC-SJC, Software Maintenence Engineer na Red Hat, organizador do JUG Vale e idealizador do SJC Digital. Acredita que dados abertos e opensource pode mudar o mundo.
-										.speaker-social
-											//- h4 Midias Sociais
-											//- a(href='https://www.github.com/pauloluan/')
-											//- 	i.fa.fa.fa-github
-											//- a(href='https://www.linkedin.com/in/pauloluan/')
-											//- 	i.fa.fa.fa-linkedin
-										//- .speaker-events
-										//- 	h4 Sessões
-										//- 	.speaker-event
-										//- 		span
-										//- 			strong 15/12 - 09:00 -
-										//- 		p William Siqueira: Dados Abertos : Desenvolvimento
-			//Leticia Silva Modal
-			#leticiasilva.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/leticiasilva.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Leticia Silva
-										span.speaker-job - Estudante de iniciação científica no INPE
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Bio: Graduanda em Ciência da Computação, estudante de iniciação científica no INPE (Instituto Nacional de Pesquisas Espaciais) e colaboradora no IEAv (Instituto de Estudos Avançados), busca fazer do mundo um lugar mais inclusivo para as mulheres e todos os grupos que são considerados minorias. Luta para trazer e incentivar mulheres a entrarem em TI, acreditarem que são capazes e fazer com que elas vejam que programar é incrível e transforma vidas. É organizadora do Django Girls, PyLadies, Devs JavaGirl e Women Techmakers de São José dos Campos, e colabora com iniciativas como o Elas Programam e Training Center.
-										.speaker-social
-
-			//Andressa Flavia Modal
-			#andressaflavia.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/andressaflavia.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Andressa Flávia
-										span.speaker-job - Estagiária de Business Technology na Johnson&Johnson
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Graduanda de Análise e Desenvolvimento de Sistemas pela FATEC, estagiária de Business Technology na Johnson&Johnson, organizadora e voluntária Django Girls SJC e PyLadies SJC. Gateira de carteirinha e apaixonada em utilizar tecnologia para melhoria da sociedade.
-										.speaker-social
-
-			//Fernanda Ribeiro Modal
-			#fernandaribeiro.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/fernandaribeiro.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Fernanda Ribeiro
-										span.speaker-job - SAP SD & PMO Analyst
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| SAP SD & PMO Analyst, graduanda em Engenharia da Computação e Agilista. Voluntária em Django Girls e Co-fundadora do PyLadies São José dos Campos. Nunca sai sem um livro, e acredita que os maiores corações são os que estão sempre abertos a aprender.
-										.speaker-social
-			
-			//Ingrid Sena Modal
-			#ingridsena.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/ingridsena.jpeg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Ingrid Sena
-										span.speaker-job - Desenvolvedora Full-stack
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Desenvolvedora Full-stack, Agilista, graduanda de Sistemas de Informação e feminista. Organizadora e voluntária de eventos Django Girls e Co-fundadora do PyLadies São José dos Campos. É mãe de gato e acredita que a solução para 99% dos problemas do mundo está na EMPATIA!
-										.speaker-social
-			//Francisco Marcelo Modal
-			#franciscomarcelo.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/franciscomarcelo.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Francisco Marcelo
-										span.speaker-job - Analista de TI na Embraer
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Analista de TI na Embraer, trabalhando no time de Engenharia de Redes. 20 anos de experiência em Telecomunicações. Especialista em Comunicações sem Fio. Professor ETEC no Curso de Redes de Computadores.
-											p Acadêmico: Mestrando na UNIFESP no programa de Inovação Tecnológica, Tecnólogo em Redes de Computadores pela FATEC e Técnico em Telecomunicações pela ETEP.
-										.speaker-social
-			//Lucas Maciel Modal
-			#lucasmaciel.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/lucasmaciel.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Lucas Maciel
-										span.speaker-job - Estudante de Engenharia da Computação
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Lucas Vinícius Maciel (24 anos). Técnico em Logística e Redes de Computadores formado pela ETEC, com graduação em Gestão de Recursos Humanos e atualmente cursando Engenharia da Computação pela UNIVESP na cidade de Igaratá. Trabalha com analise de vulnerabilidade, planejamento e implementação de sistemas de segurança em áreas comerciais e residenciais.
-										.speaker-social
-				
-			//Filipe Modal
-			#filipe.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/filipe.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Filipe Soares Leite
-										span.speaker-job - Estudante de Ciência da Computação
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Filipe Soares Leite, 26 anos. Técnico de informática pelo colégio Opção e em redes pelo Senai. Cursando ultimo semestre  de Ciências da Computação pelo Bilac. Trabalha em uma empresa de Materiais para Construção na qual é responsável por toda estrutura operacional de TI, como suporte em ERP, servidores Windows e Linux, cabeamento, etc.
-										.speaker-social
-			//Franco Modal
-			#franco.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/franco.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Franco Kaoru Nakasato Gushiken
-										span.speaker-job - Estudante de Geoprocessamento
-										p
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Franco Kaoru Nakasato Gushiken, 56 anos. Possui experiencia como consultor e gerente de TI. Atualmente está cursando o sexto período de Tecnologia em Geoprocessamento na FATEC de Jacareí. Fala Japonês fluente.
-										.speaker-social
-			//Emerson
-			#emerson.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/emerson.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Émerson Henrique de Oliveira
-										span.speaker-job - Estudante de Eng. de Computação pela ETEP
-										p
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://www.linkedin.com/in/emersonhenrique/', target="_blank")
-												i.fa.fa-linkedin
-											a(href='https://www.facebook.com/emerson.henrique.de.oliveira90', target="_blank")
-												i.fa.fa.fa-facebook
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Émerson Henrique de Oliveira, 28 anos,proprietário da EAS Tecnologia. Tecnólogo em Redes de Computadores pela FATEC e estudante de Eng. de Computação pela ETEP. Possui experiência em Desenvolvimento de aplicativos, sistema de call center, integração de dados de máquina e SAP,  treinamento e integração de planilhas, banco de dados e processamento de dados utilizando VBA.
-							
-			//Andre
-			#andre.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/andre.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name André Emídio
-										span.speaker-job - Possui experiência com suporte técnico
-										p
-										.speaker-social
-											h4 Midias Sociais
-											a(href='https://www.linkedin.com/in/andre-emidio/', target="_blank")
-												i.fa.fa-linkedin
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| André Emídio possui experiência com suporte técnico e começou a estudar data science há pouco tempo. Viu nesta  área um desafio enorme e interessante e assim faz divulgação de conhecimento. Gosta de Harry Potter e cultura nerd e joga Rugby nas horas vagas.
-										
-											
-			//Machado
-			#machado.speaker-modal.modal.fade
-				.modal-dialog
-					.modal-content
-						button.speaker-modal-close(type='button', data-dismiss='modal')
-						.modal-body
-							.row
-								.col-md-5
-									.speaker-modal-img
-										img(src='./img/machado.jpg', alt='')
-								.col-md-7
-									.speaker-modal-content
-										h2.speaker-name Mateus Machado de Souza
-										span.speaker-job - Graduando em Banco de Dados pela Fatec
-										p
-										.speaker-social
-											//- h4 Midias Sociais
-											//- a(href='https://www.linkedin.com/in/andre-emidio/', target="_blank")
-											//- 	i.fa.fa-linkedin
-										.speaker-website
-											h4 Biografia
-											p.text-justify 
-												| Mateus Machado de Souza é graduando em Banco de Dados pela Fatec São José dos Campos e técnico em Redes de Computadores pela Etec Cônego José Bento. Gosta de codar na madrugs e é entusiasta em segurança de redes.							
-	
-#sponsors.section
-	.container
-		.row
-			.section-title
-				h3.title
-					span Nossos
-					span(style='color: #1877b6;') Patrocinadores
-			.col-md-12
-				.col-md-3.col-sm-4.col-xs-6
-					a.sponsor()
-						img.sponsor(src='./img/dj.jpg', target="_blank")
-				.col-md-3.col-sm-4.col-xs-6
-					a.sponsor(href='http://etecjbento.com.br/web/' target="_blank")
-						img.sponsor(src='./img/etec.jpg', alt='')
-				.col-md-3.col-sm-4.col-xs-6
-					a.sponsor(href='http://www.kumon.com.br/' target="_blank")
-						img.sponsor(src='./img/kumon.jpg', alt='')
-				.col-md-3.col-sm-4.col-xs-6
-					a.sponsor(href='https://www.facebook.com/ukschool/' target="_blank")
-						img.sponsor(src='./img/uk.jpg', alt='')
-				
-		.col-md-8.col-md-offset-2.text-center.text-justify
-			p Caso tenha interesse em associar a sua marca a este envento, por favor, entre em contato conosco através do email “organizacao.networkingday at gmail.com”.
-			
-
-//- #cta.section
-//- 	.section-bg(style='background-image:url(./img/background03.jpg)', data-stellar-background-ratio='0.5')
-//- 	.container
-//- 		.row
-//- 			.col-md-8.col-md-offset-2
-//- 				.cta-content.text-center
-//- 					h2 Comprar ingresso
-//- 					p.lead
-//- 					a.main-btn(href='#') Comprar Ingresso
+	#contact.section
+		.container
+			.row
+				.section-title
+					h3.title
+						span Contato
+						span(style='color: #1877b6;') Info
+				.col-sm-6.col-md-6
+					.contact
+						h3 Endereço
+						p  Av. Nove de Julho, 745 - Jd. Pereira do Amparo, Jacareí - SP, 12327-682
+				.col-sm-6.col-md-6
+					.contact
+						h3 Email
+						a(href='#') organizacao.networkingday@gmail.com
+		#map
+			iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.493190869099!2d-45.96983744956965!3d-23.29785815772435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb69c549b165%3A0x6e627d89e794db08!2sEtec+C%C3%B4nego+Jos%C3%A9+Bento!5e0!3m2!1spt-BR!2sbr!4v1538533329358', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
 		
-#contact.section
-	.container
-		.row
-			.section-title
-				h3.title
-					span Contato
-					span(style='color: #1877b6;') Info
-			.col-sm-6.col-md-6
-				.contact
-					h3 Endereço
-					p  Av. Nove de Julho, 745 - Jd. Pereira do Amparo, Jacareí - SP, 12327-682
-			.col-sm-6.col-md-6
-				.contact
-					h3 Email
-					a(href='#') organizacao.networkingday@gmail.com
-	#map
-		iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.493190869099!2d-45.96983744956965!3d-23.29785815772435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb69c549b165%3A0x6e627d89e794db08!2sEtec+C%C3%B4nego+Jos%C3%A9+Bento!5e0!3m2!1spt-BR!2sbr!4v1538533329358', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
-	
-footer#footer
-	.container
-		.row
-			.col-md-4.col-md-push-4
-				//- .footer-brand
-				//- 	a.logo(href='index.html')
-				//- 		img.logo-img(src='./img/logo.png', alt='logo')
-			.col-md-4.col-md-push-4
-				//- .contact-social
-				//- 	a(href='#')
-				//- 		i.fa.fa-facebook
-				//- 	a(href='#')
-				//- 		i.fa.fa-twitter
-				//- 	a(href='#')
-				//- 		i.fa.fa-google-plus
-				//- 	a(href='#')
-				//- 		i.fa.fa-instagram
-				//- 	a(href='#')
-				//- 		i.fa.fa-pinterest
-				//- 	a(href='#')
-				//- 		i.fa.fa.fa-linkedin
-			.col-md-4.col-md-pull-8
-				span.copyright
-					script.
-						document.write(new Date().getFullYear());
-					i.fa.fa-heart-o(aria-hidden='true')
-					a(href='', target='_blank') Networking Day
-		
+	footer#footer
+		.container
+			.row
+				.col-md-4.col-md-push-4
+					//- .footer-brand
+					//- 	a.logo(href='index.html')
+					//- 		img.logo-img(src='./img/logo.png', alt='logo')
+				.col-md-4.col-md-push-4
+					//- .contact-social
+					//- 	a(href='#')
+					//- 		i.fa.fa-facebook
+					//- 	a(href='#')
+					//- 		i.fa.fa-twitter
+					//- 	a(href='#')
+					//- 		i.fa.fa-google-plus
+					//- 	a(href='#')
+					//- 		i.fa.fa-instagram
+					//- 	a(href='#')
+					//- 		i.fa.fa-pinterest
+					//- 	a(href='#')
+					//- 		i.fa.fa.fa-linkedin
+				.col-md-4.col-md-pull-8
+					span.copyright
+						script.
+							document.write(new Date().getFullYear());
+						i.fa.fa-heart-o(aria-hidden='true')
+						a(href='', target='_blank') Networking Day
+			
 // jQuery Plugins
 script(src='js/jquery.min.js')
 script(src='js/bootstrap.min.js')
@@ -1183,8 +1288,6 @@ script.
 		if($("#vermais").text() == 'Ver Mais'){
 
 			$("#vermais").text('Ver Menos')
-			$("#williamantoniobox").removeClass('hidden')
-			$("#leticiasilvabox").removeClass('hidden')
 			$("#ingridsenabox").removeClass('hidden')
 			$("#fernandaribeirobox").removeClass('hidden')
 			$("#andressaflaviabox").removeClass('hidden')
@@ -1206,8 +1309,6 @@ script.
 		}else{
 
 			$("#vermais").text('Ver Mais')
-			$("#williamantoniobox").addClass('hidden')
-			$("#leticiasilvabox").addClass('hidden')
 			$("#ingridsenabox").addClass('hidden')
 			$("#fernandaribeirobox").addClass('hidden')
 			$("#andressaflaviabox").addClass('hidden')

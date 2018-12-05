@@ -573,6 +573,27 @@ header#header.transparent-navbar
 						.speaker-content
 							h2 Émerson Henrique de Oliveira
 							span Estudante de Eng. de Computação pela ETEP
+			//Andre
+			.col-md-4.col-sm-6.hidden#andrebox
+				.speaker(data-toggle='modal', data-target='#andre')
+					.speaker-img
+						img.palestrantebox(src='./img/andre.jpg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 André Emídio 
+							span Possui experiência com suporte técnico
+			
+			//Machado
+			.col-md-4.col-sm-6.hidden#machadobox
+				.speaker(data-toggle='modal', data-target='#machado')
+					.speaker-img
+						img.palestrantebox(src='./img/machado.jpg', alt='')
+					.speaker-body
+						.speaker-social
+						.speaker-content
+							h2 Mateus Machado de Souza
+							span Graduando em Banco de Dados
 
 			.col-md-12.col-md-offset-5
 				btn.btn.btn-primary.btn-lg#vermais Ver Mais
@@ -1016,9 +1037,55 @@ header#header.transparent-navbar
 											h4 Biografia
 											p.text-justify 
 												| Émerson Henrique de Oliveira, 28 anos,proprietário da EAS Tecnologia. Tecnólogo em Redes de Computadores pela FATEC e estudante de Eng. de Computação pela ETEP. Possui experiência em Desenvolvimento de aplicativos, sistema de call center, integração de dados de máquina e SAP,  treinamento e integração de planilhas, banco de dados e processamento de dados utilizando VBA.
+							
+			//Andre
+			#andre.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/andre.jpg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name André Emídio
+										span.speaker-job - Possui experiência com suporte técnico
+										p
+										.speaker-social
+											h4 Midias Sociais
+											a(href='https://www.linkedin.com/in/andre-emidio/', target="_blank")
+												i.fa.fa-linkedin
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| André Emídio possui experiência com suporte técnico e começou a estudar data science há pouco tempo. Viu nesta  área um desafio enorme e interessante e assim faz divulgação de conhecimento. Gosta de Harry Potter e cultura nerd e joga Rugby nas horas vagas.
 										
 											
-											
+			//Machado
+			#machado.speaker-modal.modal.fade
+				.modal-dialog
+					.modal-content
+						button.speaker-modal-close(type='button', data-dismiss='modal')
+						.modal-body
+							.row
+								.col-md-5
+									.speaker-modal-img
+										img(src='./img/machado.jpg', alt='')
+								.col-md-7
+									.speaker-modal-content
+										h2.speaker-name Mateus Machado de Souza
+										span.speaker-job - Graduando em Banco de Dados pela Fatec
+										p
+										.speaker-social
+											//- h4 Midias Sociais
+											//- a(href='https://www.linkedin.com/in/andre-emidio/', target="_blank")
+											//- 	i.fa.fa-linkedin
+										.speaker-website
+											h4 Biografia
+											p.text-justify 
+												| Mateus Machado de Souza é graduando em Banco de Dados pela Fatec São José dos Campos e técnico em Redes de Computadores pela Etec Cônego José Bento. Gosta de codar na madrugs e é entusiasta em segurança de redes.							
 	
 #sponsors.section
 	.container
@@ -1027,13 +1094,20 @@ header#header.transparent-navbar
 				h3.title
 					span Nossos
 					span(style='color: #1877b6;') Patrocinadores
-			.col-md-12.col-md-offset-3
+			.col-md-12
 				.col-md-3.col-sm-4.col-xs-6
 					a.sponsor()
-						img(src='./img/dj.jpg', target="_blank")
+						img.sponsor(src='./img/dj.jpg', target="_blank")
 				.col-md-3.col-sm-4.col-xs-6
 					a.sponsor(href='http://etecjbento.com.br/web/' target="_blank")
-						img(src='./img/etec.jpg', alt='')
+						img.sponsor(src='./img/etec.jpg', alt='')
+				.col-md-3.col-sm-4.col-xs-6
+					a.sponsor(href='http://www.kumon.com.br/' target="_blank")
+						img.sponsor(src='./img/kumon.jpg', alt='')
+				.col-md-3.col-sm-4.col-xs-6
+					a.sponsor(href='https://www.facebook.com/ukschool/' target="_blank")
+						img.sponsor(src='./img/uk.jpg', alt='')
+				
 		.col-md-8.col-md-offset-2.text-center.text-justify
 			p Caso tenha interesse em associar a sua marca a este envento, por favor, entre em contato conosco através do email “organizacao.networkingday at gmail.com”.
 			
@@ -1119,6 +1193,10 @@ script.
 			$("#filipebox").removeClass('hidden')
 			$("#francobox").removeClass('hidden')
 			$("#emersonbox").removeClass('hidden')
+			$("#andrebox").removeClass('hidden')
+			$("#machadobox").removeClass('hidden')
+
+
 
 
 
@@ -1138,6 +1216,9 @@ script.
 			$("#filipebox").addClass('hidden')
 			$("#francobox").addClass('hidden')
 			$("#emersonbox").addClass('hidden')
+			$("#andrebox").addClass('hidden')
+			$("#machadobox").addClass('hidden')
+
 
 
 
